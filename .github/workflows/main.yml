@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change 'main' if your default branch has a different name.
+      - main  # Change 'main' if your branch has a different name.
 
 jobs:
   deploy:
@@ -12,9 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Pages
-        uses: actions/setup-pages@v1
-      
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
