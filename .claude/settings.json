@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/yt_research.py:*)",
+      "Bash(python3 scripts/notebooklm_pipeline.py:*)",
+      "Bash(yt-dlp:*)",
+      "Bash(notebooklm:*)",
+      "Bash(python3 -c:*)"
+    ]
+  }
+}
