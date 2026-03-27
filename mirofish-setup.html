@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiroFish Setup Guide | Pratik Dhami</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .setup-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .setup-section h2 {
+            margin-bottom: 20px;
+        }
+        .setup-section h3 {
+            color: #00ff00;
+            margin: 24px 0 8px;
+        }
+        .setup-section ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+        .setup-section ul li {
+            margin-bottom: 6px;
+        }
+        pre {
+            background: rgba(0, 255, 0, 0.05);
+            border: 1px solid #00ff00;
+            border-radius: 4px;
+            padding: 14px 18px;
+            overflow-x: auto;
+            margin: 10px 0 16px;
+            font-size: 0.95em;
+        }
+        .note {
+            border-left: 3px solid #00ff00;
+            padding: 10px 16px;
+            margin: 16px 0;
+            background: rgba(0, 255, 0, 0.04);
+        }
+        a.back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            color: #00ff00;
+            text-decoration: none;
+        }
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Matrix Background -->
+    <div class="matrix"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">Pratik Dhami</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="setup-section">
+        <a href="projects.html" class="back-link">&larr; Back to Projects</a>
+
+        <h2>MiroFish &mdash; Local Setup Guide</h2>
+        <p>MiroFish is an AI-powered agent with persistent memory, combining an OpenAI-compatible LLM with Zep Cloud for long-term context.</p>
+
+        <h3>Prerequisites</h3>
+        <ul>
+            <li>Node.js (for the frontend &amp; setup scripts)</li>
+            <li>Python 3.10+</li>
+            <li>Git</li>
+            <li>Two API keys (both have free tiers):
+                <ul>
+                    <li>An OpenAI-compatible LLM &mdash; recommended: <strong>Qwen-plus</strong> via Alibaba Bailian</li>
+                    <li><strong>Zep Cloud</strong> for agent memory &mdash; app.getzep.com</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>1. Clone the Repository</h3>
+        <pre>git clone https://github.com/666ghj/MiroFish.git
+cd MiroFish</pre>
+
+        <h3>2. Configure Environment Variables</h3>
+        <pre>cp .env.example .env</pre>
+        <p>Open <code>.env</code> and fill in your keys:</p>
+        <pre>LLM_API_KEY=your_api_key
+LLM_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+LLM_MODEL_NAME=qwen-plus
+
+ZEP_API_KEY=your_zep_api_key</pre>
+
+        <h3>3. Install Dependencies</h3>
+        <pre>npm run setup:all</pre>
+        <p>This installs Node dependencies, creates a Python virtual environment, and installs Python dependencies automatically.</p>
+
+        <h3>4. Run the App</h3>
+        <pre>npm run dev</pre>
+        <ul>
+            <li>Frontend &rarr; <code>http://localhost:3000</code></li>
+            <li>Backend API &rarr; <code>http://localhost:5001</code></li>
+        </ul>
+
+        <div class="note">
+            <strong>Note:</strong> Developed and tested on macOS. Windows compatibility is still being tested &mdash; use WSL2 on Windows for best results.
+        </div>
+    </div>
+
+</body>
+</html>
