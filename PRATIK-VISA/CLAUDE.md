@@ -17,8 +17,8 @@
 | Passport Issued | 28 June 2022 |
 | Passport Expiry | 27 June 2032 |
 | VicRoads Permit | 053548725 (exp 28-11-2033) |
-| Address (permit) | U10 172 Rathmines St, Fairfield VIC 3078 |
-| Address (marriage cert) | 36 Pasilla Circuit Mickleham, VIC |
+| Current Address | Degraves Street, Melbourne VIC (since Dec 2025) |
+| AFP Certificate | Issued — showing Degraves Street ✅ |
 
 ---
 
@@ -29,51 +29,122 @@
 | Full Name | Passang Maya TAMANG |
 | Date of Birth | 07 October 2001 |
 | Place of Birth | Morang, Nepal |
+| AU Status | Permanent Resident + Citizenship Approval |
 | VicRoads Permit | 041583082 (exp 09-07-2031) |
-| Address (permit) | 13 Fermont Ave, Craigieburn VIC 3064 |
 | Centrelink CRN | 307-776-078A |
 | Health Care Card | Yes (Services Australia) |
+| Current Address | Degraves Street, Melbourne VIC (shared with Pratik) |
 | Parent 1 | Gyambu TAMANG |
 | Parent 2 | Dhan TAMANG |
+| Family location | Mickleham, VIC |
 
 ---
 
-## RELATIONSHIP
+## RELATIONSHIP TIMELINE
+
+| Date | Event |
+|------|-------|
+| Early 2025 | Relationship begins (photos from this period) |
+| Apr 2025 | Living together starts — Glenroy address |
+| Aug 2025 | Moved to Jacana |
+| Sep 2025 | Moved to Broadmeadows |
+| Dec 2025 | Moved to Degraves Street (current shared home) |
+| 12 March 2026 | Cultural wedding ceremony |
+| 22 March 2026 | Legal marriage — Old Treasury Building, East Melbourne |
+| April 2026 | Visa application project started |
+
+---
+
+## MARRIAGE
 
 | Field | Detail |
 |-------|--------|
-| Relationship type | MARRIED (not de facto) |
-| Marriage date | 22 March 2026 |
-| Marriage location | Old Treasury Building, 20 Spring Street, East Melbourne VIC |
-| Marriage Cert Reg No | 211189/2026 |
+| Cultural ceremony | 12 March 2026 |
+| Legal ceremony | 22 March 2026 |
+| Venue (legal) | Old Treasury Building, 20 Spring Street, East Melbourne VIC |
+| Cert Reg No | 211189/2026 |
 | Witnesses | Ramesh CHAUTARYA, Bhim Maya TAMANG |
+| Instagram post | 12 Mar wedding post — 568 likes |
 
 ---
 
-## VISA APPLICATION
+## JOINT FINANCES
 
-| Field | Detail |
-|-------|--------|
-| Visa type | Partner Visa — Married |
-| Subclass | 820 (Temporary) → 801 (Permanent) |
+| Account | Detail |
+|---------|--------|
+| DAILY-JOINT | Main joint transaction account |
+| Joint GoalSaver | Active from Jul 2025 |
+| Nepal Wedding Trip | Joint savings account for wedding trip |
+| CommSec | Shares (joint or individual) |
+| UBank | Savings account |
+
+---
+
+## APPLICATION STATUS
+
+| Item | Status |
+|------|--------|
+| Visa type | Partner Visa — Married (820 → 801) |
 | Application type | Onshore |
-| Applicant's current visa | TBC — confirm before lodging |
-| Target lodge date | TBC |
+| Current visa type | TBC — confirm before lodging |
+| AFP cert (Pratik) | ✅ Done — Degraves Street |
+| AFP cert (Passang) | 🔄 Arriving soon |
+| Nepal police clearance | 🔄 Pending resubmission |
+| S Karki StatDec | 🔄 Awaiting signature |
+| Cover letter | ✅ Drafted |
+| Application lodged | Not yet |
 
 ---
 
-## KEY ISSUES TO ADDRESS IN APPLICATION
+## KEY OUTSTANDING ITEMS
 
-1. **Address discrepancy** — Pratik's permit shows Fairfield, Passang's shows Craigieburn, marriage cert shows Mickleham. Explain current shared address and history clearly.
-2. **Sponsor status** — Confirm Passang is AU citizen or permanent resident (required to sponsor). Health Care Card suggests PR status but must verify.
-3. **Short marriage duration** — Married 22 March 2026. Strengthen with pre-marriage relationship evidence.
+1. Passang's PR Visa Grant Letter (most critical)
+2. Passang's Citizenship Approval Letter
+3. DAILY-JOINT account statements (6 months)
+4. Cultural marriage certificate (12 Mar 2026)
+5. All Form 888s × 4 witnesses
+6. Personal relationship statements (both)
+7. Forms 47SP, 40SP, Form 80
+
+---
+
+## FOLDER STRUCTURE
+
+```
+PRATIK-VISA/
+├── 01-IDENTITY/
+├── 02-RELATIONSHIP-SOCIAL/
+├── 03-RELATIONSHIP-COMMITMENT/
+├── 04-HOUSEHOLD-ADDRESS/
+├── 05-HOUSEHOLD-FINANCIAL/
+├── 06-STATUTORY-DECLARATIONS/
+├── 07-POLICE-CLEARANCES/
+├── 08-FORMS/
+├── 09-COVER-LETTER/
+├── documents/
+│   ├── master-checklist.csv     ← Full document tracker
+│   ├── progress-summary.md      ← Status overview
+│   └── checklist.md             ← Detailed checklist
+├── evidence/
+│   └── relationship-evidence-log.md
+├── templates/
+│   ├── cover-letter.md
+│   ├── personal-statement.md
+│   └── statutory-declaration-guide.md
+└── tracker/
+    └── timeline.md
+```
 
 ---
 
 ## INSTRUCTIONS FOR CLAUDE
 
-- Always use the real names and details above in all drafts
-- Visa is married partner (not de facto) — use marriage cert as primary relationship proof
-- Flag if any advice seems inconsistent with official Home Affairs guidance
-- Always recommend verifying with a MARA agent for legal matters
+- Always use real names: applicant = Pratik Singh DHAMI, sponsor = Passang Maya TAMANG
+- Visa type = married partner (not de facto) — marriage cert is primary relationship proof
+- Relationship evidence starts early 2025
+- Current shared address = Degraves Street (since Dec 2025)
+- Multiple previous addresses — always note address explanation is needed
+- Passang is AU PR with citizenship approval — she is a valid sponsor
+- Flag anything inconsistent with official Home Affairs guidance
+- Recommend MARA agent for legal matters
 - Official reference: https://immi.homeaffairs.gov.au
