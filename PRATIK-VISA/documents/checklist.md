@@ -1,64 +1,65 @@
 # AU Partner Visa — Document Checklist
-## Subclass 820 / 801 (Onshore)
-> Update status: [ ] Not Started | [~] In Progress | [x] Complete
+## Pratik Singh DHAMI & Passang Maya TAMANG
+## Subclass 820 / 801 (Married — Onshore)
+
+> Status: [ ] Not Started | [~] In Progress | [x] Complete
 
 ---
 
-## APPLICANT (Pratik) — Identity & Status
+## APPLICANT (Pratik) — Identity Documents
 
 | # | Document | Status | Notes |
 |---|----------|--------|-------|
-| 1 | Valid Passport (all pages) | [ ] | |
-| 2 | Current visa grant notice | [ ] | |
-| 3 | Birth certificate | [ ] | |
-| 4 | National ID / Driving licence | [ ] | |
-| 5 | Change of name deed (if applicable) | [ ] | |
+| 1 | Passport — Nepal PA0030747 (exp 27 Jun 2032) | [x] | Scanned ✓ |
+| 2 | Current visa grant notice | [ ] | Confirm current visa type & expiry ASAP |
+| 3 | Birth certificate (Nepal) | [ ] | Obtain from Nepal if not already held |
+| 4 | VicRoads Learner Permit 053548725 | [x] | Scanned ✓ |
+| 5 | Change of name deed (if applicable) | [ ] | N/A unless name changed |
 
 ---
 
-## SPONSOR (Partner) — Identity & Status
+## SPONSOR (Passang) — Identity Documents
 
 | # | Document | Status | Notes |
 |---|----------|--------|-------|
-| 6 | Australian passport / citizenship certificate | [ ] | |
-| 7 | Birth certificate | [ ] | |
-| 8 | Driver's licence | [ ] | |
-| 9 | Proof of Australian residence | [ ] | |
+| 6 | **Proof of AU citizenship or PR status** | [ ] | **CRITICAL — must confirm before lodging** |
+| 7 | Birth certificate | [ ] | Obtain |
+| 8 | VicRoads Learner Permit 041583082 | [x] | Scanned ✓ |
+| 9 | Centrelink card / Health Care Card | [x] | CRN 307-776-078A ✓ |
+| 10 | Proof of address (Craigieburn or current) | [ ] | Utility bill / bank statement |
 
 ---
 
-## RELATIONSHIP — Identity of Relationship
+## MARRIAGE / RELATIONSHIP DOCUMENTS
 
 | # | Document | Status | Notes |
 |---|----------|--------|-------|
-| 10 | Joint bank account statements (12+ months) | [ ] | |
-| 11 | Joint lease / mortgage documents | [ ] | |
-| 12 | Utility bills in both names | [ ] | |
-| 13 | Joint insurance policies | [ ] | |
-| 14 | Evidence of shared finances (transfers, bills) | [ ] | |
+| 11 | Marriage Certificate — Victorian (Reg 211189/2026) | [x] | Scanned ✓ — 22 March 2026 |
+| 12 | Commonwealth Certificate of Marriage | [x] | Scanned ✓ |
+| 13 | Evidence of relationship BEFORE marriage | [ ] | Photos, messages, travel — very important |
+| 14 | Joint bank account statements | [ ] | |
+| 15 | Joint lease or proof of shared address | [ ] | Explain address history (Fairfield/Craigieburn/Mickleham) |
+| 16 | Utility bills / shared household evidence | [ ] | |
 
 ---
 
-## RELATIONSHIP — Social Aspects
+## ADDRESS EXPLANATION DOCUMENT
 
 | # | Document | Status | Notes |
 |---|----------|--------|-------|
-| 15 | Photos together (various occasions, dates visible) | [ ] | |
-| 16 | Evidence of social outings / events together | [ ] | |
-| 17 | Statutory declarations from friends & family | [ ] | Min. 2 recommended |
-| 18 | Social media / messaging history excerpts | [ ] | |
-| 19 | Evidence of meeting each other's families | [ ] | |
+| 17 | Statutory declaration explaining address history | [ ] | Fairfield → Craigieburn → Mickleham — write clear timeline |
 
 ---
 
-## RELATIONSHIP — Commitment
+## SOCIAL EVIDENCE
 
 | # | Document | Status | Notes |
 |---|----------|--------|-------|
-| 20 | Evidence of how relationship started | [ ] | |
-| 21 | Communication records (emails, texts, calls) | [ ] | |
-| 22 | Travel together (boarding passes, hotel bookings) | [ ] | |
-| 23 | Future plans together (property, children, etc.) | [ ] | |
+| 18 | Photos together (various occasions, dated) | [ ] | Aim for 20–40 across different dates |
+| 19 | Evidence of social events as a couple | [ ] | |
+| 20 | Statutory declarations — Form 888 (×2 minimum) | [ ] | Must be AU citizen/PR |
+| 21 | Social media / communication history | [ ] | WhatsApp, calls, messages |
+| 22 | Evidence of meeting each other's families | [ ] | |
 
 ---
 
@@ -66,8 +67,8 @@
 
 | # | Document | Status | Notes |
 |---|----------|--------|-------|
-| 24 | Health examination (HAP ID) | [ ] | Book via immi.homeaffairs.gov.au |
-| 25 | Chest X-ray (if required by country of birth) | [ ] | |
+| 23 | Health examination (get HAP ID first) | [ ] | Book via immi.homeaffairs.gov.au |
+| 24 | Chest X-ray (likely required — born Nepal) | [ ] | Usually required for Nepali nationals |
 
 ---
 
@@ -75,9 +76,9 @@
 
 | # | Document | Status | Notes |
 |---|----------|--------|-------|
-| 26 | Police clearance — Australia | [ ] | |
-| 27 | Police clearance — Country of birth | [ ] | |
-| 28 | Police clearance — Any country lived 12+ months since age 16 | [ ] | |
+| 25 | Police clearance — Australia (AFP) | [ ] | Apply at afp.gov.au |
+| 26 | Police clearance — Nepal | [ ] | Required (country of birth) |
+| 27 | Police clearance — any other country lived 12+ months since age 16 | [ ] | Check if applicable |
 
 ---
 
@@ -85,9 +86,9 @@
 
 | # | Form | Status | Notes |
 |---|------|--------|-------|
-| 29 | Form 47SP — Application for migration (applicant) | [ ] | |
-| 30 | Form 40SP — Sponsorship for a partner (sponsor) | [ ] | |
-| 31 | Form 888 — Statutory declaration (supporting persons) | [ ] | Min. 2 |
+| 28 | Form 47SP — Application for migration (Pratik) | [ ] | Complete via ImmiAccount |
+| 29 | Form 40SP — Sponsorship for partner (Passang) | [ ] | Complete via ImmiAccount |
+| 30 | Form 888 × 2 — Statutory declaration (supporters) | [ ] | Min. 2 witnesses |
 
 ---
 
@@ -95,19 +96,25 @@
 
 | Item | Amount (AUD) | Status |
 |------|-------------|--------|
-| Primary application fee (820) | ~$8,850 | [ ] |
-| Health examinations | ~$300–500 | [ ] |
-| Police clearance fees | Variable | [ ] |
+| Primary 820 application fee | ~$9,095 (2026) | [ ] |
+| Health examination | ~$300–500 | [ ] |
+| Police clearances | Variable | [ ] |
 
-> **Note:** Fees change annually. Verify at immi.homeaffairs.gov.au before paying.
+> Verify exact fee at immi.homeaffairs.gov.au before paying — fees change annually.
 
 ---
 
-## CHECKLIST SUMMARY
+## PROGRESS SUMMARY
 
-- Total items: 31
-- Complete: 0
-- In Progress: 0
-- Not Started: 31
+| Category | Total | Done | Remaining |
+|----------|-------|------|-----------|
+| Pratik identity | 5 | 2 | 3 |
+| Passang identity | 5 | 2 | 3 |
+| Marriage/relationship | 7 | 2 | 5 |
+| Social evidence | 5 | 0 | 5 |
+| Health | 2 | 0 | 2 |
+| Character | 3 | 0 | 3 |
+| Forms | 3 | 0 | 3 |
+| **TOTAL** | **30** | **6** | **24** |
 
 *Last updated: April 2026*
