@@ -1,75 +1,66 @@
 # PRATIK VISA — AU Partner Visa 820/801
 
-**Applicant:** Pratik Singh DHAMI
-**Sponsor:** Passang Maya TAMANG (AU Permanent Resident, Citizenship Approved)
-**Marriage:** 12 March 2026 (cultural) + 22 March 2026 (legal)
-**Visa:** Subclass 820 (Temporary) → 801 (Permanent) — Onshore
+**Applicant:** Pratik Singh DHAMI (Student Visa 500, Nepal)
+**Sponsor:** Passang Maya TAMANG (PR → Citizen 30 April 2026)
+**Address:** Apartment 402, 9 Degraves Street, Melbourne VIC 3000
+**Cultural wedding:** 12 March 2026 — Mickleham
+**Legal marriage:** 22 March 2026 — Old Treasury Building (Reg 211189/2026)
+**Target lodge date:** Late June 2026
+
+---
+
+## START HERE
+
+| File | Purpose |
+|------|---------|
+| `documents/master-checklist.csv` | **Master tracker** — 56 documents with status, filename, priority |
+| `documents/progress-summary.md` | Progress overview, what's critical, key dates |
+| `documents/naming-convention.md` | How to name every file before saving |
 
 ---
 
 ## Folder Structure
 
 ```
-PRATIK-VISA/
-├── 01-IDENTITY/              ← Passports, birth certs, marriage certs, PR letter
-├── 02-RELATIONSHIP-SOCIAL/   ← Wedding photos, chronological photos, social media
-├── 03-RELATIONSHIP-COMMITMENT/ ← Wills, super nominations, travel, savings
-├── 04-HOUSEHOLD-ADDRESS/     ← Rent records, AFP cert, mail, uni enrollment
-├── 05-HOUSEHOLD-FINANCIAL/   ← Joint accounts, payslips, DoorDash, CommSec
-├── 06-STATUTORY-DECLARATIONS/ ← Personal statements, Form 888s, S Karki StatDec
-├── 07-POLICE-CLEARANCES/     ← AFP certs (both), Nepal clearance
-├── 08-FORMS/                 ← Form 47SP, 40SP, Form 80, ImmiAccount receipt
-├── 09-COVER-LETTER/          ← Cover letter to case officer
-│
-├── documents/
-│   ├── master-checklist.csv  ← MASTER TRACKER — start here
-│   ├── progress-summary.md   ← Progress overview with priorities
-│   └── checklist.md          ← Detailed item-by-item checklist
-│
-├── evidence/
-│   └── relationship-evidence-log.md
-├── templates/
-│   ├── cover-letter.md
-│   ├── personal-statement.md
-│   └── statutory-declaration-guide.md
-└── tracker/
-    └── timeline.md
+01_Identity_Documents/              ← Passports, birth certs, PR letter, citizenship letter
+02_Marriage_Certificates/           ← Victorian cert (BDM correction pending), cultural + legal photos
+03_Relationship_Social_Evidence/    ← Instagram, photos chronological, DoorDash
+04_Relationship_Commitment_Evidence/ ← Wills, super, life insurance, Nepal trip savings
+05_Address_Evidence_Glenroy_AprJul2025/
+06_Address_Evidence_Jacana_AugSep2025/
+07_Address_Evidence_Coolaroo_AugSep2025/
+08_Address_Evidence_Broadmeadows_SepDec2025/
+09_Address_Evidence_Degraves_Dec2025_Present/ ← AFP cert, S Karki stat dec, Medicare, VicRoads
+10_Financial_Evidence_Joint_Accounts/  ← DAILY-JOINT, GoalSaver, Nepal trip account
+11_Financial_Evidence_Rent_Payments/   ← Combined rent narrative all addresses
+12_Statutory_Declarations_Form888/     ← Personal statements, 5× Form 888, S Karki
+13_Police_Clearances/                  ← AFP (both), Nepal clearance
+14_Application_Forms/                  ← Form 47SP, 40SP, Form 80
+15_Cover_Letter_And_Supporting_Docs/   ← Cover letter to case officer
 ```
 
 ---
-
-## Quick Start
-
-1. Open `documents/master-checklist.csv` — your master tracker
-2. Open `documents/progress-summary.md` — see what to do next
-3. Save scanned documents into the numbered folders using the file naming convention
-
-## File Naming Convention
-
-```
-[FOLDER]_[Description]-[Date].pdf
-Example: 01-ID_Pratik-Passport-PA0030747.pdf
-Example: 04-ADD_Rent-Degraves-Dec2025-Present.pdf
-Example: 02-SOC_Photos-Chronological/20250301_Cafe-Together.jpg
-```
 
 ## Current Status (April 2026)
 
-- Items secured: **10 / 58 (17%)**
-- In progress: **4**
-- Outstanding: **44**
-
-## Top Priority Right Now
-
-1. Passang's PR Visa Grant Letter
-2. Passang's Citizenship Approval Letter
-3. DAILY-JOINT account statements (6 months)
-4. Cultural marriage certificate (12 Mar 2026)
+| | Count | % |
+|-|-------|---|
+| Done ✅ | 15 | 27% |
+| In Progress 🔄 | 27 | 48% |
+| Outstanding ❌ | 14 | 25% |
+| **Total** | **56** | |
 
 ---
 
-> **Disclaimer:** Personal organisation tool only. Verify all requirements with the
-> Department of Home Affairs or a registered MARA agent.
-> Official site: https://immi.homeaffairs.gov.au
+## Top Priority Items
 
-*Created: April 2026*
+1. Follow up BDM — corrected marriage certificate
+2. Sign wills + life insurance nominations
+3. Get all 5 Form 888s drafted and signed
+4. Download all joint bank statements (DAILY-JOINT, GoalSaver)
+5. Compile Instagram DM history + photo bundle
+
+---
+
+> **Disclaimer:** Personal organisation tool only. Verify all requirements at
+> immi.homeaffairs.gov.au or with a registered MARA agent.

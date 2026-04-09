@@ -1,59 +1,57 @@
-Category,Document Name,Status,File Name,Notes
-01-IDENTITY,Passport — Pratik (all pages),Have It,01-ID_Pratik-Passport-PA0030747.pdf,Nepal passport PA0030747 exp 27 Jun 2032
-01-IDENTITY,Birth Certificate — Pratik,Outstanding,01-ID_Pratik-Birth-Certificate.pdf,Obtain from Nepal
-01-IDENTITY,Marriage Certificate — Cultural (12 Mar 2026),Outstanding,01-ID_Marriage-Cultural-12Mar2026.pdf,Cultural ceremony 12 March 2026
-01-IDENTITY,Marriage Certificate — Legal Victorian (22 Mar 2026),Have It,01-ID_Marriage-Legal-Victorian-Reg211189-2026.pdf,Reg No 211189/2026
-01-IDENTITY,Commonwealth Certificate of Marriage (22 Mar 2026),Have It,01-ID_Marriage-Commonwealth-22Mar2026.pdf,Signed by celebrant
-01-IDENTITY,Passport — Passang,Outstanding,01-ID_Passang-Passport.pdf,Obtain certified copy
-01-IDENTITY,PR Visa Grant Letter — Passang,Outstanding,01-ID_Passang-PR-Visa-Grant-Letter.pdf,Critical — confirms sponsorship eligibility
-01-IDENTITY,Citizenship Approval Letter — Passang,Outstanding,01-ID_Passang-Citizenship-Approval-Letter.pdf,Strong evidence of settled status in AU
-02-RELATIONSHIP-SOCIAL,Wedding Photos — Cultural Ceremony (12 Mar 2026),Outstanding,02-SOC_Wedding-Cultural-12Mar2026/,Upload best 10–20 photos in subfolder
-02-RELATIONSHIP-SOCIAL,Wedding Photos — Legal Ceremony (22 Mar 2026),Outstanding,02-SOC_Wedding-Legal-22Mar2026/,Upload best 10–20 photos in subfolder
-02-RELATIONSHIP-SOCIAL,Photos Together — Chronological (early 2025 to present),Outstanding,02-SOC_Photos-Chronological/,Aim for 20–40 photos; name by date eg 20250301_Description.jpg
-02-RELATIONSHIP-SOCIAL,Photos with Passang's Family (Mickleham),Outstanding,02-SOC_Photos-With-Passang-Family.pdf,Shows integration with her family
-02-RELATIONSHIP-SOCIAL,Photos with Friends,Outstanding,02-SOC_Photos-With-Friends.pdf,Shows social recognition as a couple
-02-RELATIONSHIP-SOCIAL,Instagram Post — 12 Mar Wedding (568 likes),Outstanding,02-SOC_Instagram-Wedding-Post-568Likes.pdf,Screenshot showing post + likes + comments
-02-RELATIONSHIP-SOCIAL,Other Social Media Posts,Outstanding,02-SOC_Social-Media-Other-Posts.pdf,Any other public posts showing relationship
-02-RELATIONSHIP-SOCIAL,Message Conversation Screenshots,Outstanding,02-SOC_Message-Conversations.pdf,Daily life WhatsApp/iMessage conversations
-03-RELATIONSHIP-COMMITMENT,Will — Pratik (naming Passang),Outstanding,03-COM_Pratik-Will.pdf,
-03-RELATIONSHIP-COMMITMENT,Will — Passang (naming Pratik),Outstanding,03-COM_Passang-Will.pdf,
-03-RELATIONSHIP-COMMITMENT,Superannuation Beneficiary — Pratik (naming Passang),Outstanding,03-COM_Pratik-Super-Beneficiary.pdf,
-03-RELATIONSHIP-COMMITMENT,Superannuation Beneficiary — Passang (naming Pratik),Outstanding,03-COM_Passang-Super-Beneficiary.pdf,
-03-RELATIONSHIP-COMMITMENT,Life Insurance Beneficiary — Pratik (naming Passang),Outstanding,03-COM_Pratik-Life-Insurance-Beneficiary.pdf,
-03-RELATIONSHIP-COMMITMENT,Life Insurance Beneficiary — Passang (naming Pratik),Outstanding,03-COM_Passang-Life-Insurance-Beneficiary.pdf,
-03-RELATIONSHIP-COMMITMENT,Nepal Wedding Trip — Joint Savings Account Statements,Outstanding,03-COM_Nepal-Wedding-Trip-Account-Statements.pdf,Shows joint future planning
-03-RELATIONSHIP-COMMITMENT,Travel Bookings or Plans Together,Outstanding,03-COM_Travel-Bookings.pdf,Any flights bookings or trip plans together
-04-HOUSEHOLD-ADDRESS,AFP Certificate — showing Degraves Street,Have It,04-ADD_Pratik-AFP-Certificate-Degraves.pdf,Current address confirmed ✅
-04-HOUSEHOLD-ADDRESS,Medicare Card — updated to Degraves Street,Outstanding,04-ADD_Medicare-Card-Degraves.pdf,Update Medicare address if not done
-04-HOUSEHOLD-ADDRESS,S Karki Statutory Declaration — Residence Confirmation,In Progress,04-ADD_Karki-StatDec-Residence.pdf,Awaiting signature
-04-HOUSEHOLD-ADDRESS,Rent Records — Glenroy (Apr–Jul 2025),Outstanding,04-ADD_Rent-Glenroy-Apr-Jul2025.pdf,Bank transfer records or receipts
-04-HOUSEHOLD-ADDRESS,Rent Records — Jacana (Aug–Sep 2025),Outstanding,04-ADD_Rent-Jacana-Aug-Sep2025.pdf,Bank transfer records or receipts
-04-HOUSEHOLD-ADDRESS,Rent Records — Broadmeadows (Sep–Dec 2025),Have It,04-ADD_Rent-Broadmeadows-Sep-Dec2025.pdf,✅
-04-HOUSEHOLD-ADDRESS,Rent Records — Degraves Street (Dec 2025–present),Have It,04-ADD_Rent-Degraves-Dec2025-Present.pdf,✅
-04-HOUSEHOLD-ADDRESS,Bank Statements — Degraves Street Address,Outstanding,04-ADD_Bank-Statement-Degraves-Address.pdf,Statements showing Degraves St as address
-04-HOUSEHOLD-ADDRESS,UBank Statement — showing Degraves Street,Outstanding,04-ADD_UBank-Statement-Degraves.pdf,
-04-HOUSEHOLD-ADDRESS,Mail or Correspondence at Degraves Street,Outstanding,04-ADD_Mail-Correspondence-Degraves.pdf,Any official letters received there
-04-HOUSEHOLD-ADDRESS,University Enrollment — showing Degraves Street,Outstanding,04-ADD_University-Enrollment-Degraves.pdf,
-05-HOUSEHOLD-FINANCIAL,DAILY-JOINT Account Statements (3–6 months),Outstanding,05-FIN_Daily-Joint-Account-Statements.pdf,Key joint account — get 6 months minimum
-05-HOUSEHOLD-FINANCIAL,Joint GoalSaver Statements (Jul 2025–present),Outstanding,05-FIN_GoalSaver-Joint-Statements.pdf,Shows shared savings from Jul 2025
-05-HOUSEHOLD-FINANCIAL,Nepal Wedding Trip Account Statements,Outstanding,05-FIN_Nepal-Wedding-Trip-Statements.pdf,Joint savings for wedding trip
-05-HOUSEHOLD-FINANCIAL,DoorDash Order History Screenshots (Mar 2025–present),Have It,05-FIN_DoorDash-Order-History.pdf,✅ Shows shared household orders
-05-HOUSEHOLD-FINANCIAL,Rent Payment Transaction History — All Addresses,Have It,05-FIN_Rent-Payments-All-Addresses.pdf,✅ Glenroy / Jacana / Broadmeadows / Degraves
-05-HOUSEHOLD-FINANCIAL,CommSec Shares Statements,Outstanding,05-FIN_CommSec-Shares-Statements.pdf,Joint or individual — include if shows shared investment
-05-HOUSEHOLD-FINANCIAL,UBank Savings Statements,Outstanding,05-FIN_UBank-Savings-Statements.pdf,
-05-HOUSEHOLD-FINANCIAL,Passang's Payslips,Outstanding,05-FIN_Passang-Payslips.pdf,Shows her income / financial contribution
-06-STATUTORY-DECLARATIONS,Relationship Statement — Pratik,Outstanding,06-STAT_Pratik-Relationship-Statement.pdf,Personal statement in own words
-06-STATUTORY-DECLARATIONS,Sponsor Statement — Passang,Outstanding,06-STAT_Passang-Sponsor-Statement.pdf,Passang's personal statement
-06-STATUTORY-DECLARATIONS,Form 888 — Witness 1,Outstanding,06-STAT_Form888-Witness1.pdf,Must be AU citizen or PR
-06-STATUTORY-DECLARATIONS,Form 888 — Witness 2,Outstanding,06-STAT_Form888-Witness2.pdf,Must be AU citizen or PR
-06-STATUTORY-DECLARATIONS,Form 888 — Witness 3,Outstanding,06-STAT_Form888-Witness3.pdf,Must be AU citizen or PR
-06-STATUTORY-DECLARATIONS,Form 888 — Witness 4,Outstanding,06-STAT_Form888-Witness4.pdf,Must be AU citizen or PR
-06-STATUTORY-DECLARATIONS,S Karki — Residence Confirmation StatDec,In Progress,06-STAT_Karki-Residence-StatDec.pdf,Awaiting signature
-07-POLICE-CLEARANCES,AFP Certificate — Pratik,Have It,07-POL_Pratik-AFP-Certificate.pdf,✅ Shows Degraves Street address
-07-POLICE-CLEARANCES,AFP Certificate — Passang,In Progress,07-POL_Passang-AFP-Certificate.pdf,Arriving soon
-07-POLICE-CLEARANCES,Nepal Police Clearance — Pratik,In Progress,07-POL_Pratik-Nepal-Police-Clearance.pdf,Pending resubmission
-08-FORMS,Form 47SP — Primary Applicant (Pratik),Outstanding,08-FORM_Form47SP-Pratik.pdf,Complete via ImmiAccount
-08-FORMS,Form 40SP — Sponsor (Passang),Outstanding,08-FORM_Form40SP-Passang.pdf,Complete via ImmiAccount
-08-FORMS,Form 80 — Personal Particulars,Outstanding,08-FORM_Form80-Pratik.pdf,Personal history form
-08-FORMS,ImmiAccount Lodgement,Outstanding,08-FORM_ImmiAccount-Lodgement-Receipt.pdf,Final step — save receipt immediately
-09-COVER-LETTER,Cover Letter to Case Officer,Have It,09-COV_Cover-Letter.pdf,✅ Drafted
+Category,Document Name,Status,Filename,Priority,Notes
+01_Identity_Documents,Pratik — Passport (all pages),Done,01_ID_Pratik_Passport_PA0030747.pdf,Critical,Nepal passport PA0030747 exp 27 Jun 2032
+01_Identity_Documents,Pratik — Birth Certificate,Done,01_ID_Pratik_BirthCertificate.pdf,Critical,Obtain certified copy from Nepal
+01_Identity_Documents,Passang — Passport,Done,01_ID_Passang_Passport.pdf,Critical,Include all pages
+01_Identity_Documents,Passang — PR Visa Grant Letter,Done,01_ID_Passang_PR_VisaGrantLetter.pdf,Critical,Confirms sponsor eligibility
+01_Identity_Documents,Passang — Citizenship Approval Letter,Done,01_ID_Passang_CitizenshipApprovalLetter.pdf,Critical,Citizenship ceremony 30 April 2026
+02_Marriage_Certificates,Legal Marriage Certificate — Victorian (Reg 211189/2026),In Progress,02_MAR_Legal_Victorian_Reg211189_2026.pdf,Critical,Error on parent fields — correction submitted to BDM; await corrected cert
+02_Marriage_Certificates,Cultural Ceremony Photos (12 Mar 2026 — Mickleham),In Progress,02_MAR_Cultural_Ceremony_Photos_12Mar2026.pdf,High,Ceremony at 36 Pasilla Circuit Mickleham; compile best photos into PDF
+02_Marriage_Certificates,Legal Ceremony Photos (22 Mar 2026 — Old Treasury Building),In Progress,02_MAR_Legal_Ceremony_Photos_22Mar2026.pdf,High,Old Treasury Building East Melbourne; compile best photos into PDF
+03_Relationship_Social_Evidence,Instagram Wedding Post (568 likes — 12 Mar 2026),In Progress,03_SOC_Instagram_WeddingPost_568Likes_12Mar2026.pdf,High,Screenshot showing post + like count + comments
+03_Relationship_Social_Evidence,Instagram DM History (from September 2023),In Progress,03_SOC_Instagram_DM_History_Sep2023_Present.pdf,High,Shows relationship starting Sep 2023 — key early evidence
+03_Relationship_Social_Evidence,Instagram Stories Archive,In Progress,03_SOC_Instagram_Stories_Archive.pdf,Medium,Export/screenshot key stories showing couple
+03_Relationship_Social_Evidence,Photo Bundle — Chronological (early 2025 to present),In Progress,03_SOC_Photos_Chronological_2025_Present.pdf,High,20–40 photos; name each by date eg 20250301_Description.jpg
+03_Relationship_Social_Evidence,Photos with Passang's Family at Mickleham,In Progress,03_SOC_Photos_Passang_Family_Mickleham.pdf,High,Shows integration with sponsor's family
+03_Relationship_Social_Evidence,DoorDash Order History (Mar 2025 — present),Done,03_SOC_DoorDash_OrderHistory_Mar2025_Present.pdf,Medium,All addresses corroborated — screenshots saved ✅
+04_Relationship_Commitment_Evidence,Wills — Both naming each other,In Progress,04_COM_Wills_Both_Pratik_Passang.pdf,High,Drafted — not yet signed; sign before lodging
+04_Relationship_Commitment_Evidence,Pratik Superannuation — Passang named as beneficiary,Done,04_COM_Pratik_Super_Beneficiary_Passang.pdf,High,Done ✅
+04_Relationship_Commitment_Evidence,Passang Superannuation — Pratik named as beneficiary,Done,04_COM_Passang_Super_Beneficiary_Pratik.pdf,High,Done ✅
+04_Relationship_Commitment_Evidence,Life Insurance — Beneficiary nominations (both),In Progress,04_COM_LifeInsurance_Beneficiary_Both.pdf,High,In progress
+04_Relationship_Commitment_Evidence,Nepal Wedding Trip — Joint Savings Account (from Jul 2025),In Progress,04_COM_NepalWeddingTrip_JointSavings_Jul2025.pdf,High,Shows shared future planning and commitment
+04_Relationship_Commitment_Evidence,Future Travel Bookings or Plans Together,Outstanding,04_COM_TravelBookings_Together.pdf,Medium,Any flights or accommodation booked together
+05_Address_Evidence_Glenroy_AprJul2025,Rent Payments — Glenroy (Apr–Jul 2025),Outstanding,05_GLE_RentPayments_AprJul2025.pdf,High,Need bank transfer records for this period
+06_Address_Evidence_Jacana_AugSep2025,Rent Payments — Jacana (Aug–Sep 2025),Outstanding,06_JAC_RentPayments_AugSep2025.pdf,High,Need bank transfer records for this period
+07_Address_Evidence_Coolaroo_AugSep2025,Rent Payments — Coolaroo (Aug–Sep 2025),Outstanding,07_COO_RentPayments_AugSep2025.pdf,High,Need bank transfer records for this period
+08_Address_Evidence_Broadmeadows_SepDec2025,Rent Payments to Suman Neupane — Broadmeadows (Sep–Dec 2025),Done,08_BRO_RentPayments_SumanNeupane_SepDec2025.pdf,High,Screenshots done ✅
+09_Address_Evidence_Degraves_Dec2025_Present,Rent Payments to S Karki — Degraves (Dec 2025–present),Done,09_DEG_RentPayments_SKarki_Dec2025_Present.pdf,Critical,Done ✅
+09_Address_Evidence_Degraves_Dec2025_Present,S Karki — Residence Statutory Declaration,In Progress,09_DEG_SKarki_ResidenceStatDec_Apr2026.pdf,Critical,Drafted — awaiting signature
+09_Address_Evidence_Degraves_Dec2025_Present,AFP Certificate — showing Degraves Street,Done,09_DEG_Pratik_AFP_Certificate_Degraves.pdf,Critical,Done 7 April 2026 ✅ clean record
+09_Address_Evidence_Degraves_Dec2025_Present,Medicare Card — updated to Degraves Street,Done,09_DEG_Medicare_Card_Degraves.pdf,High,Done ✅
+09_Address_Evidence_Degraves_Dec2025_Present,VicRoads — updated to Degraves Street,Done,09_DEG_VicRoads_Update_Degraves.pdf,High,Done ✅
+09_Address_Evidence_Degraves_Dec2025_Present,Bank Statements — showing Degraves address,Outstanding,09_DEG_BankStatements_DegravesAddress.pdf,High,Get CBA statements showing Apt 402 9 Degraves St
+09_Address_Evidence_Degraves_Dec2025_Present,University Enrollment — showing Degraves address,Outstanding,09_DEG_UniversityEnrollment_Degraves.pdf,High,Confirm enrollment letter shows current address
+09_Address_Evidence_Degraves_Dec2025_Present,UBank Statement — showing Degraves address,Outstanding,09_DEG_UBank_Statement_Degraves.pdf,Medium,
+10_Financial_Evidence_Joint_Accounts,DAILY-JOINT Account Statements (Apr 2026–present),In Progress,10_FIN_DAILY-JOINT_Statements_Apr2026.pdf,Critical,Building from April 2026 — get 3–6 months before lodging
+10_Financial_Evidence_Joint_Accounts,Joint GoalSaver Statements (Jul 2025–present),In Progress,10_FIN_GoalSaver_Joint_Jul2025_Present.pdf,Critical,Good long-term evidence from Jul 2025
+10_Financial_Evidence_Joint_Accounts,Nepal Wedding Trip Account Statements,In Progress,10_FIN_NepalWeddingTrip_Statements.pdf,High,Joint savings for trip — shows shared future planning
+10_Financial_Evidence_Joint_Accounts,Pratik — Personal CBA Statements,Outstanding,10_FIN_Pratik_CBA_Personal_Statements.pdf,High,Shows Pratik's financial activity and address
+10_Financial_Evidence_Joint_Accounts,Passang — Salary Account Statements,Outstanding,10_FIN_Passang_SalaryAccount_Statements.pdf,High,Shows Passang's income and contribution
+10_Financial_Evidence_Joint_Accounts,CommSec Shares Statements,Outstanding,10_FIN_CommSec_Shares_Statements.pdf,Medium,Include if jointly held or shows shared investment
+11_Financial_Evidence_Rent_Payments,Rent Payment Summary — All Addresses Combined,Outstanding,11_RENT_AllAddresses_Summary.pdf,High,Compile all rent records into one document with address timeline narrative
+12_Statutory_Declarations_Form888,Pratik — Relationship Statement (Version 2),In Progress,12_STAT_Pratik_RelationshipStatement_V2.pdf,Critical,Drafted — finalise and sign
+12_Statutory_Declarations_Form888,Passang — Sponsor Statement,In Progress,12_STAT_Passang_SponsorStatement.pdf,Critical,Drafted — finalise and sign
+12_Statutory_Declarations_Form888,Form 888 — Bhim Maya Tamang (PR — sister),In Progress,12_STAT_Form888_BhimMayaTamang_Sister.pdf,Critical,Australian PR ✅ — eligible witness
+12_Statutory_Declarations_Form888,Form 888 — Prem Tamang (Citizen — brother),In Progress,12_STAT_Form888_PremTamang_Brother.pdf,Critical,Australian Citizen ✅ — eligible witness
+12_Statutory_Declarations_Form888,Form 888 — Tshring Tamang (PR — brother),In Progress,12_STAT_Form888_TshringTamang_Brother.pdf,High,Australian PR ✅ — eligible witness
+12_Statutory_Declarations_Form888,Form 888 — Gyambu Tamang (Citizen — father),In Progress,12_STAT_Form888_GyambuTamang_Father.pdf,High,Australian Citizen ✅ — eligible witness
+12_Statutory_Declarations_Form888,Form 888 — Dhan Maya Tamang (Citizen — mother),In Progress,12_STAT_Form888_DhanMayaTamang_Mother.pdf,High,Australian Citizen ✅ — eligible witness
+12_Statutory_Declarations_Form888,Statutory Declaration — Pratik's Uncle (temp visa),In Progress,12_STAT_StatDec_PratikUncle.pdf,Low,Temp visa — cannot do Form 888; standard stat dec only
+12_Statutory_Declarations_Form888,Statutory Declaration — Housemate (temp visa),In Progress,12_STAT_StatDec_Housemate.pdf,Low,Temp visa — cannot do Form 888; standard stat dec only
+12_Statutory_Declarations_Form888,S Karki — Residence Confirmation Statutory Declaration,In Progress,12_STAT_SKarki_ResidenceConfirmation.pdf,Critical,Awaiting signature
+13_Police_Clearances,Pratik — AFP Certificate,Done,13_POL_Pratik_AFP_Certificate_07Apr2026.pdf,Critical,Done 7 April 2026 — clean record ✅
+13_Police_Clearances,Passang — AFP Certificate,In Progress,13_POL_Passang_AFP_Certificate.pdf,Critical,Arriving soon
+13_Police_Clearances,Nepal Police Clearance — Pratik,In Progress,13_POL_Pratik_Nepal_PoliceClearance.pdf,Critical,Resubmitted — follow up on status
+14_Application_Forms,Form 47SP — Primary Applicant (Pratik),Outstanding,14_FORM_47SP_Pratik.pdf,Critical,Complete via ImmiAccount before lodging
+14_Application_Forms,Form 40SP — Sponsor (Passang),Outstanding,14_FORM_40SP_Passang.pdf,Critical,Complete via ImmiAccount before lodging
+14_Application_Forms,Form 80 — Personal Particulars,Outstanding,14_FORM_80_Pratik.pdf,Critical,Required for all applicants — personal history
+15_Cover_Letter_And_Supporting_Docs,Cover Letter to Case Officer,Done,15_COV_CoverLetter_CaseOfficer.pdf,Critical,Done ✅ — review before lodging to ensure all docs referenced
