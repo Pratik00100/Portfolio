@@ -49,6 +49,7 @@ public class ReportPanel extends JPanel {
 
         add(btnPanel, BorderLayout.NORTH);
         add(new JScrollPane(reportArea), BorderLayout.CENTER);
+        generateSummary();
     }
 
     private void generateEnrolmentReport() {
