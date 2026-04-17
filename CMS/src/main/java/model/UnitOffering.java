@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class UnitOffering {
     private String offeringId;
     private String unitCode;
@@ -8,11 +10,13 @@ public class UnitOffering {
     private String instructorId;
 
     public UnitOffering(String offeringId, String unitCode, String semester, int year, String instructorId) {
-        this.offeringId = offeringId;
-        this.unitCode = unitCode;
-        this.semester = semester;
+        if (offeringId == null || offeringId.isBlank()) throw new IllegalArgumentException("Offering ID cannot be empty");
+        if (unitCode == null || unitCode.isBlank()) throw new IllegalArgumentException("Unit code cannot be empty");
+        this.offeringId = offeringId.trim();
+        this.unitCode = unitCode.trim().toUpperCase();
+        this.semester = semester != null ? semester.trim() : "";
         this.year = year;
-        this.instructorId = instructorId;
+        this.instructorId = (instructorId != null && !instructorId.isBlank()) ? instructorId.trim() : null;
     }
 
     public String getOfferingId() { return offeringId; }
@@ -36,6 +40,18 @@ public class UnitOffering {
         String instrId = (parts.length == 5 && !parts[4].trim().isEmpty()) ? parts[4].trim() : null;
         return new UnitOffering(parts[0].trim(), parts[1].trim(), parts[2].trim(),
                 Integer.parseInt(parts[3].trim()), instrId);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof UnitOffering uo)) return false;
+        return offeringId.equalsIgnoreCase(uo.offeringId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(offeringId.toLowerCase());
     }
 
     @Override

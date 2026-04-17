@@ -1,0 +1,324 @@
+@startuml College_Management_System
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #336699
+    ArrowColor #336699
+    FontName Calibri
+}
+skinparam note {
+    BackgroundColor LightYellow
+    BorderColor Gray
+}
+
+title College Management System — UML Class Diagram\nBN231 Software Development Skills and Tools
+
+' ─── INTERFACE ───────────────────────────────────────────────
+interface Person <<interface>> {
+    + getName() : String
+    + getEmail() : String
+}
+
+' ─── MODEL PACKAGE ───────────────────────────────────────────
+package model {
+
+    class Unit {
+        - unitCode : String
+        - unitName : String
+        - credits : int
+        - description : String
+        - prerequisites : List<String>
+        + Unit(code, name, credits, desc, prereqs)
+        + getUnitCode() : String
+        + getUnitName() : String
+        + getCredits() : int
+        + getDescription() : String
+        + getPrerequisites() : List<String>
+        + toCSV() : String
+        + {static} fromCSV(line : String) : Unit
+        + equals(o : Object) : boolean
+        + hashCode() : int
+        + toString() : String
+    }
+
+    class UnitOffering {
+        - offeringId : String
+        - unitCode : String
+        - semester : String
+        - year : int
+        - instructorId : String
+        + UnitOffering(id, unitCode, semester, year, instrId)
+        + getOfferingId() : String
+        + getUnitCode() : String
+        + getSemester() : String
+        + getYear() : int
+        + getInstructorId() : String
+        + setInstructorId(id : String)
+        + toCSV() : String
+        + {static} fromCSV(line : String) : UnitOffering
+        + equals(o : Object) : boolean
+        + hashCode() : int
+    }
+
+    class Instructor {
+        - instructorId : String
+        - name : String
+        - email : String
+        - department : String
+        + Instructor(id, name, email, dept)
+        + getInstructorId() : String
+        + getName() : String
+        + getEmail() : String
+        + getDepartment() : String
+        + toCSV() : String
+        + {static} fromCSV(line : String) : Instructor
+        + equals(o : Object) : boolean
+        + hashCode() : int
+    }
+
+    class Student {
+        - studentId : String
+        - name : String
+        - email : String
+        - enrollmentYear : int
+        + Student(id, name, email, year)
+        + getStudentId() : String
+        + getName() : String
+        + getEmail() : String
+        + getEnrollmentYear() : int
+        + toCSV() : String
+        + {static} fromCSV(line : String) : Student
+        + equals(o : Object) : boolean
+        + hashCode() : int
+    }
+
+    class Enrollment {
+        - enrollmentId : String
+        - studentId : String
+        - offeringId : String
+        - date : String
+        + Enrollment(id, studentId, offeringId, date)
+        + getEnrollmentId() : String
+        + getStudentId() : String
+        + getOfferingId() : String
+        + getDate() : String
+        + toCSV() : String
+        + {static} fromCSV(line : String) : Enrollment
+        + equals(o : Object) : boolean
+        + hashCode() : int
+    }
+}
+
+' ─── UTIL PACKAGE ────────────────────────────────────────────
+package util {
+
+    class FileManager {
+        + {static} loadUnits(path : String) : ArrayList<Unit>
+        + {static} saveUnits(units, path : String) : void
+        + {static} loadOfferings(path : String) : ArrayList<UnitOffering>
+        + {static} saveOfferings(offerings, path : String) : void
+        + {static} loadInstructors(path : String) : ArrayList<Instructor>
+        + {static} saveInstructors(instructors, path : String) : void
+        + {static} loadStudents(path : String) : ArrayList<Student>
+        + {static} saveStudents(students, path : String) : void
+        + {static} loadEnrollments(path : String) : ArrayList<Enrollment>
+        + {static} saveEnrollments(enrollments, path : String) : void
+    }
+
+    class SearchSortUtil {
+        + {static} linearSearchUnit(units, code) : Unit
+        + {static} linearSearchStudent(students, id) : Student
+        + {static} linearSearchInstructor(instructors, id) : Instructor
+        + {static} linearSearchEnrollment(enrollments, id) : Enrollment
+        + {static} binarySearchUnit(sortedUnits, code) : Unit
+        + {static} bubbleSortUnits(units : ArrayList<Unit>) : void
+        + {static} bubbleSortStudents(students : ArrayList<Student>) : void
+        + {static} insertionSortInstructors(instructors : ArrayList<Instructor>) : void
+    }
+}
+
+' ─── CONTROLLER PACKAGE ──────────────────────────────────────
+package controller {
+
+    class UnitController {
+        - units : ArrayList<Unit>
+        - filePath : String
+        + UnitController()
+        + UnitController(filePath : String)
+        + addUnit(unit : Unit) : boolean
+        + getAllUnits() : ArrayList<Unit>
+        + findByCode(code : String) : Unit
+        + getSortedByName() : ArrayList<Unit>
+        + searchUnits(keyword : String) : ArrayList<Unit>
+    }
+
+    class UnitOfferingController {
+        - offerings : ArrayList<UnitOffering>
+        - filePath : String
+        + UnitOfferingController()
+        + UnitOfferingController(filePath : String)
+        + addOffering(offering : UnitOffering) : boolean
+        + getAllOfferings() : ArrayList<UnitOffering>
+        + findById(id : String) : UnitOffering
+        + updateOffering(updated : UnitOffering) : void
+        + getOfferingsByUnit(unitCode : String) : ArrayList<UnitOffering>
+    }
+
+    class InstructorController {
+        - instructors : ArrayList<Instructor>
+        - filePath : String
+        + InstructorController()
+        + InstructorController(filePath : String)
+        + addInstructor(instructor : Instructor) : boolean
+        + getAllInstructors() : ArrayList<Instructor>
+        + findById(id : String) : Instructor
+        + assignToOffering(instrId, offering) : boolean
+        + getSortedByName() : ArrayList<Instructor>
+    }
+
+    class StudentController {
+        - students : ArrayList<Student>
+        - filePath : String
+        + StudentController()
+        + StudentController(filePath : String)
+        + addStudent(student : Student) : boolean
+        + getAllStudents() : ArrayList<Student>
+        + findById(id : String) : Student
+        + getSortedByName() : ArrayList<Student>
+        + searchStudents(keyword : String) : ArrayList<Student>
+    }
+
+    class EnrollmentController {
+        - enrollments : ArrayList<Enrollment>
+        - filePath : String
+        + EnrollmentController()
+        + EnrollmentController(filePath : String)
+        + enroll(studentId, offeringId) : boolean
+        + getAllEnrollments() : ArrayList<Enrollment>
+        + filterByOffering(offeringId : String) : ArrayList<Enrollment>
+        + filterByStudent(studentId : String) : ArrayList<Enrollment>
+        + findById(enrollmentId : String) : Enrollment
+    }
+}
+
+' ─── VIEW PACKAGE ────────────────────────────────────────────
+package view {
+
+    class MainFrame {
+        + MainFrame()
+    }
+
+    class UnitPanel {
+        - controller : UnitController
+        + UnitPanel(controller : UnitController)
+    }
+
+    class UnitOfferingPanel {
+        - controller : UnitOfferingController
+        + UnitOfferingPanel(...)
+    }
+
+    class InstructorPanel {
+        - controller : InstructorController
+        + InstructorPanel(...)
+    }
+
+    class StudentPanel {
+        - controller : StudentController
+        + StudentPanel(controller : StudentController)
+    }
+
+    class EnrollmentPanel {
+        - controller : EnrollmentController
+        + EnrollmentPanel(...)
+    }
+
+    class ReportPanel {
+        + ReportPanel(...)
+    }
+
+    class AlgorithmsDemoPanel {
+        - unitController : UnitController
+        - studentController : StudentController
+        + AlgorithmsDemoPanel(...)
+        + runBubbleSort() : void
+        + runInsertionSort() : void
+        + runLinearSearch() : void
+        + runBinarySearch() : void
+    }
+}
+
+' ─── ENTRY POINT ─────────────────────────────────────────────
+class Main {
+    + {static} main(args : String[]) : void
+}
+
+' ─── RELATIONSHIPS ────────────────────────────────────────────
+
+' Interface implementation
+Student ..|> Person
+Instructor ..|> Person
+
+' Model associations
+Enrollment --> Student : references >
+Enrollment --> UnitOffering : references >
+UnitOffering --> Unit : belongs to >
+UnitOffering --> Instructor : assigned to >
+
+' Controllers use models
+UnitController o-- Unit : manages (ArrayList)
+UnitOfferingController o-- UnitOffering : manages (ArrayList)
+InstructorController o-- Instructor : manages (ArrayList)
+StudentController o-- Student : manages (ArrayList)
+EnrollmentController o-- Enrollment : manages (ArrayList)
+
+' Controllers use utils
+UnitController ..> FileManager : uses
+UnitController ..> SearchSortUtil : uses
+StudentController ..> FileManager : uses
+StudentController ..> SearchSortUtil : uses
+InstructorController ..> FileManager : uses
+InstructorController ..> SearchSortUtil : uses
+UnitOfferingController ..> FileManager : uses
+EnrollmentController ..> FileManager : uses
+EnrollmentController ..> SearchSortUtil : uses
+
+' Views use controllers
+MainFrame *-- UnitPanel
+MainFrame *-- UnitOfferingPanel
+MainFrame *-- InstructorPanel
+MainFrame *-- StudentPanel
+MainFrame *-- EnrollmentPanel
+MainFrame *-- ReportPanel
+MainFrame *-- AlgorithmsDemoPanel
+
+UnitPanel ..> UnitController : calls
+UnitOfferingPanel ..> UnitOfferingController : calls
+InstructorPanel ..> InstructorController : calls
+StudentPanel ..> StudentController : calls
+EnrollmentPanel ..> EnrollmentController : calls
+AlgorithmsDemoPanel ..> UnitController : calls
+AlgorithmsDemoPanel ..> StudentController : calls
+
+Main ..> MainFrame : creates
+
+note top of UnitController
+  MVC Controller Layer
+  Enforces business rules,
+  no UI dependencies
+end note
+
+note top of MainFrame
+  MVC View Layer
+  All Swing/GUI code
+  contained here
+end note
+
+note bottom of FileManager
+  Persistence Layer
+  CSV file I/O for all models
+  data/ directory
+end note
+
+@enduml

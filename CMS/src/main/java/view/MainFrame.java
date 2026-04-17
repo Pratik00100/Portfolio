@@ -16,7 +16,7 @@ public class MainFrame extends JFrame {
 
         setTitle("College Management System — BN231");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(960, 680);
+        setSize(1050, 720);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
@@ -31,17 +31,19 @@ public class MainFrame extends JFrame {
         JTabbedPane tabs = new JTabbedPane();
         tabs.setFont(new Font("Calibri", Font.PLAIN, 13));
 
-        tabs.addTab("Units", new UnitPanel(unitController));
-        tabs.addTab("Unit Offerings", new UnitOfferingPanel(offeringController, unitController, instructorController));
-        tabs.addTab("Instructors", new InstructorPanel(instructorController, offeringController));
-        tabs.addTab("Students", new StudentPanel(studentController));
-        tabs.addTab("Enrolment", new EnrollmentPanel(enrollmentController, studentController, offeringController));
-        tabs.addTab("Reports", new ReportPanel(enrollmentController, studentController, offeringController, unitController, instructorController));
+        tabs.addTab("📋 Units", new UnitPanel(unitController));
+        tabs.addTab("📅 Offerings", new UnitOfferingPanel(offeringController, unitController, instructorController));
+        tabs.addTab("👨‍🏫 Instructors", new InstructorPanel(instructorController, offeringController));
+        tabs.addTab("🎓 Students", new StudentPanel(studentController));
+        tabs.addTab("📝 Enrolment", new EnrollmentPanel(enrollmentController, studentController, offeringController));
+        tabs.addTab("📊 Reports", new ReportPanel(enrollmentController, studentController, offeringController, unitController, instructorController));
+        tabs.addTab("⚙ Algorithms", new AlgorithmsDemoPanel(unitController, studentController));
 
         add(tabs, BorderLayout.CENTER);
 
-        JLabel footer = new JLabel("BN231 — Software Development Skills and Tools", SwingConstants.CENTER);
+        JLabel footer = new JLabel("BN231 — Software Development Skills and Tools  |  MVC Architecture  |  ArrayList + File I/O  |  Search & Sort Algorithms", SwingConstants.CENTER);
         footer.setFont(new Font("Calibri", Font.ITALIC, 11));
+        footer.setForeground(new Color(80, 80, 80));
         footer.setBorder(BorderFactory.createEmptyBorder(4, 0, 4, 0));
         add(footer, BorderLayout.SOUTH);
 

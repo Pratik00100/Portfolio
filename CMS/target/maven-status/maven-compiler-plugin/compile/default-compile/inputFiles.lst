@@ -1,4 +1,6 @@
 /home/user/Portfolio/CMS/src/main/java/Main.java
+/home/user/Portfolio/CMS/src/main/java/Screenshot.java
+/home/user/Portfolio/CMS/src/main/java/ScreenshotAll.java
 /home/user/Portfolio/CMS/src/main/java/controller/EnrollmentController.java
 /home/user/Portfolio/CMS/src/main/java/controller/InstructorController.java
 /home/user/Portfolio/CMS/src/main/java/controller/StudentController.java
@@ -6,11 +8,13 @@
 /home/user/Portfolio/CMS/src/main/java/controller/UnitOfferingController.java
 /home/user/Portfolio/CMS/src/main/java/model/Enrollment.java
 /home/user/Portfolio/CMS/src/main/java/model/Instructor.java
+/home/user/Portfolio/CMS/src/main/java/model/Person.java
 /home/user/Portfolio/CMS/src/main/java/model/Student.java
 /home/user/Portfolio/CMS/src/main/java/model/Unit.java
 /home/user/Portfolio/CMS/src/main/java/model/UnitOffering.java
 /home/user/Portfolio/CMS/src/main/java/util/FileManager.java
 /home/user/Portfolio/CMS/src/main/java/util/SearchSortUtil.java
+/home/user/Portfolio/CMS/src/main/java/view/AlgorithmsDemoPanel.java
 /home/user/Portfolio/CMS/src/main/java/view/EnrollmentPanel.java
 /home/user/Portfolio/CMS/src/main/java/view/InstructorPanel.java
 /home/user/Portfolio/CMS/src/main/java/view/MainFrame.java
