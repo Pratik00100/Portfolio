@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Pratik Dhami</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-embed {
+            width: 100%;
+            height: 75vh;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+        .gallery-header {
+            margin-bottom: 20px;
+        }
+
+        .gallery-header p {
+            margin-top: 10px;
+            font-size: 15px;
+            color: #00cc00;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Matrix Background -->
+    <div class="matrix"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">Pratik Dhami</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="gallery-header">
+            <h2>Gallery</h2>
+            <p>Wedding photography &mdash; browse all photos below.</p>
+        </div>
+        <iframe
+            class="gallery-embed"
+            src="https://drive.google.com/embeddedfolderview?id=1rSenpRJnNZy8iY1mYFALU7AGOtw6nv7L#grid"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+</body>
+</html>
