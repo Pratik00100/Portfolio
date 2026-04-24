@@ -8,7 +8,7 @@
     <style>
         .gallery-embed {
             width: 100%;
-            height: 75vh;
+            height: 70vh;
             border: none;
             border-radius: 8px;
             box-shadow: 0 0 20px #00ff00;
@@ -22,6 +22,17 @@
             margin-top: 10px;
             font-size: 15px;
             color: #00cc00;
+        }
+
+        .gallery-folder {
+            margin-bottom: 40px;
+        }
+
+        .gallery-folder h3 {
+            margin-bottom: 12px;
+            font-size: 18px;
+            color: #00ff00;
+            text-shadow: 0 0 8px #00ff00;
         }
     </style>
 </head>
@@ -50,11 +61,24 @@
             <h2>Gallery</h2>
             <p>Wedding photography &mdash; browse all photos below.</p>
         </div>
-        <iframe
-            class="gallery-embed"
-            src="https://drive.google.com/embeddedfolderview?id=1rSenpRJnNZy8iY1mYFALU7AGOtw6nv7L#grid"
-            allowfullscreen>
-        </iframe>
+
+        <div class="gallery-folder">
+            <h3>Album 1</h3>
+            <iframe
+                class="gallery-embed"
+                src="https://drive.google.com/embeddedfolderview?id=1rSenpRJnNZy8iY1mYFALU7AGOtw6nv7L#grid"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="gallery-folder">
+            <h3>Album 2</h3>
+            <iframe
+                class="gallery-embed"
+                src="https://drive.google.com/embeddedfolderview?id=1hZiL_CuGuruQRTPoXfETw30LQqdmxj7a#grid"
+                allowfullscreen>
+            </iframe>
+        </div>
     </section>
 
 </body>
