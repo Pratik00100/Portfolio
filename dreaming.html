@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dreaming: Self-Improving Agents | Pratik Dhami</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .article-header .label {
+            display: inline-block;
+            background-color: rgba(0, 255, 0, 0.1);
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            padding: 4px 14px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .article-header h2 {
+            font-size: 2rem;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .article-header .subtitle {
+            font-size: 1rem;
+            color: #aaffaa;
+            opacity: 0.8;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 16px;
+            font-size: 13px;
+            color: #aaffaa;
+            opacity: 0.7;
+        }
+
+        .toc {
+            background-color: rgba(0, 255, 0, 0.05);
+            border-left: 3px solid #00ff00;
+            padding: 20px 24px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+        }
+
+        .toc h3 {
+            color: #00ff00;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .toc ol {
+            list-style: decimal;
+            padding-left: 20px;
+        }
+
+        .toc ol li {
+            margin: 6px 0;
+            color: #aaffaa;
+            font-size: 14px;
+        }
+
+        .toc ol li a {
+            color: #aaffaa;
+            text-decoration: none;
+        }
+
+        .toc ol li a:hover {
+            color: #00ff00;
+        }
+
+        .article-section {
+            margin-bottom: 48px;
+        }
+
+        .section-tag {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: #00ff00;
+            opacity: 0.6;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .article-section h3 {
+            font-size: 1.4rem;
+            color: #00ff00;
+            text-shadow: 0 0 8px #00ff00;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .article-section p {
+            color: #ccffcc;
+            margin-bottom: 14px;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .definition-box {
+            background-color: rgba(0, 255, 0, 0.07);
+            border: 1px solid rgba(0, 255, 0, 0.4);
+            border-radius: 6px;
+            padding: 20px 24px;
+            margin: 20px 0;
+        }
+
+        .definition-box .def-label {
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #00ff00;
+            margin-bottom: 8px;
+        }
+
+        .definition-box p {
+            color: #ccffcc;
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .stat-highlight {
+            text-align: center;
+            padding: 30px 20px;
+            margin: 24px 0;
+            background-color: rgba(0, 255, 0, 0.05);
+            border-radius: 8px;
+            border: 1px solid rgba(0, 255, 0, 0.2);
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            color: #00ff00;
+            text-shadow: 0 0 20px #00ff00;
+            line-height: 1;
+        }
+
+        .stat-label {
+            color: #aaffaa;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .stages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .stage-card {
+            background-color: rgba(0, 255, 0, 0.05);
+            border: 1px solid rgba(0, 255, 0, 0.25);
+            border-radius: 6px;
+            padding: 18px;
+        }
+
+        .stage-card .stage-num {
+            font-size: 28px;
+            color: rgba(0, 255, 0, 0.3);
+            font-weight: bold;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stage-card h4 {
+            color: #00ff00;
+            font-size: 14px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stage-card p {
+            color: #aaffaa;
+            font-size: 13px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 14px;
+        }
+
+        .compare-table th {
+            background-color: rgba(0, 255, 0, 0.15);
+            color: #00ff00;
+            padding: 12px 16px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+        }
+
+        .compare-table td {
+            padding: 12px 16px;
+            color: #ccffcc;
+            border-bottom: 1px solid rgba(0, 255, 0, 0.1);
+        }
+
+        .compare-table tr:hover td {
+            background-color: rgba(0, 255, 0, 0.04);
+        }
+
+        .opportunities-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .opportunities-list li {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding: 16px;
+            background-color: rgba(0, 255, 0, 0.04);
+            border-left: 3px solid rgba(0, 255, 0, 0.5);
+            border-radius: 0 6px 6px 0;
+        }
+
+        .opportunities-list .opp-num {
+            font-size: 24px;
+            color: rgba(0, 255, 0, 0.4);
+            font-weight: bold;
+            min-width: 32px;
+            line-height: 1;
+            padding-top: 2px;
+        }
+
+        .opportunities-list .opp-content h4 {
+            color: #00ff00;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .opportunities-list .opp-content p {
+            color: #aaffaa;
+            font-size: 13px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .risks-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .risks-list li {
+            padding: 14px 18px;
+            margin-bottom: 12px;
+            background-color: rgba(255, 60, 0, 0.05);
+            border-left: 3px solid rgba(255, 120, 0, 0.5);
+            border-radius: 0 6px 6px 0;
+            color: #ffddaa;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .risks-list li strong {
+            color: #ffbb55;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .spec-item {
+            background-color: rgba(0, 255, 0, 0.05);
+            border: 1px solid rgba(0, 255, 0, 0.2);
+            border-radius: 6px;
+            padding: 14px;
+        }
+
+        .spec-item .spec-key {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(0, 255, 0, 0.6);
+            margin-bottom: 6px;
+        }
+
+        .spec-item .spec-val {
+            color: #ccffcc;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .takeaway-box {
+            background: linear-gradient(135deg, rgba(0,255,0,0.08), rgba(0,100,0,0.1));
+            border: 1px solid rgba(0, 255, 0, 0.4);
+            border-radius: 8px;
+            padding: 28px 32px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .takeaway-box h3 {
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+            font-size: 1.2rem;
+            margin-bottom: 14px;
+        }
+
+        .takeaway-box p {
+            color: #ccffcc;
+            font-size: 15px;
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 600px) {
+            .article-header h2 { font-size: 1.4rem; }
+            .stat-number { font-size: 2.8rem; }
+            .stages-grid { grid-template-columns: 1fr; }
+            .specs-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Matrix Background -->
+    <div class="matrix"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">Pratik Dhami</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Article -->
+    <section id="dreaming-article">
+
+        <div class="article-header">
+            <div class="label">AI Research Breakdown &mdash; May 2026</div>
+            <h2>Anthropic Just Shipped Self-Improving AI Agents.<br>Here's What That Actually Means.</h2>
+            <p class="subtitle">
+                Claude agents now learn from yesterday's failures, rewrite their own memory,<br>
+                and wake up smarter every morning. No retraining. No prompts. No engineer touching them.
+            </p>
+            <div class="article-meta">
+                <span>Published: May 24, 2026</span>
+                <span>Topic: AI Agents / Dreaming</span>
+                <span>Source: Anthropic Code with Claude, May 6, 2026</span>
+            </div>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3>Inside this breakdown</h3>
+            <ol>
+                <li><a href="#what-dreaming-is">What Dreaming actually is (in plain English)</a></li>
+                <li><a href="#how-it-works">How it works under the hood — 4 stages</a></li>
+                <li><a href="#harvey-ai">The Harvey AI story — what the 6x really means</a></li>
+                <li><a href="#the-shift">Why this changes the AI agency economy forever</a></li>
+                <li><a href="#opportunities">5 business opportunities most people will miss</a></li>
+                <li><a href="#risks">The honest risks nobody is talking about</a></li>
+            </ol>
+        </div>
+
+        <!-- Section 01 -->
+        <div class="article-section" id="what-dreaming-is">
+            <div class="section-tag">01 / The Feature</div>
+            <h3>What Dreaming actually is.</h3>
+
+            <p>
+                Until now, every AI agent forgot. You spend a week training a Claude agent for your workflow.
+                It learns your style, your tone, the way you want emails written. The session ends. It forgets.
+                Next session you start from scratch.
+            </p>
+            <p>
+                Dreaming flips that.
+            </p>
+
+            <div class="definition-box">
+                <div class="def-label">Definition</div>
+                <p>
+                    Dreaming is a scheduled background process that runs <em>between</em> agent sessions. It reviews
+                    past session transcripts, finds patterns the agent missed in real time, deletes outdated memory,
+                    merges duplicate entries, and writes a cleaner, smarter memory store for next time.
+                </p>
+            </div>
+
+            <p>In plain English: your agent reviews yesterday and gets better overnight.</p>
+
+            <h3 style="margin-top:28px;">The verified facts.</h3>
+
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <div class="spec-key">Launched</div>
+                    <div class="spec-val">May 6, 2026 at Code with Claude, San Francisco</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-key">Status</div>
+                    <div class="spec-val">Research preview — access via request form on Claude Platform</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-key">Supported Models</div>
+                    <div class="spec-val">Claude Opus 4.7 and Claude Sonnet 4.6</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-key">Where it Runs</div>
+                    <div class="spec-val">Background process on Anthropic infrastructure, scheduled by the developer</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-key">What it Changes</div>
+                    <div class="spec-val">External memory store only. Model weights stay the same. Original sessions stay untouched.</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-key">Runtime</div>
+                    <div class="spec-val">Minutes to tens of minutes depending on input size</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-key">Billing</div>
+                    <div class="spec-val">Standard API token rates for the chosen model</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 02 -->
+        <div class="article-section" id="how-it-works">
+            <div class="section-tag">02 / Under the Hood</div>
+            <h3>4 stages of a dream cycle.</h3>
+
+            <p>
+                Think of it like sleep for your agent. The brain replays the day, decides what to keep,
+                throws out noise, and reorganises the rest. Same process, different substrate.
+            </p>
+
+            <div class="stages-grid">
+                <div class="stage-card">
+                    <div class="stage-num">01</div>
+                    <h4>Replay</h4>
+                    <p>
+                        The dream job pulls up to 100 past session transcripts and the agent's current memory store.
+                        It reads everything end to end as raw material.
+                    </p>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-num">02</div>
+                    <h4>Pattern Extraction</h4>
+                    <p>
+                        It identifies recurring mistakes, workflows that converged, and stale facts — like a client
+                        preference that has since changed.
+                    </p>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-num">03</div>
+                    <h4>Memory Rewrite</h4>
+                    <p>
+                        Duplicates merge. Outdated entries get replaced. New patterns get added. The output is a brand
+                        new memory store — not an edit of the old one.
+                    </p>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-num">04</div>
+                    <h4>Handoff</h4>
+                    <p>
+                        Developers can let the new memory go live automatically or review it first. The original memory
+                        is never overwritten. You can roll back any time.
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                <strong style="color:#00ff00;">Important nuance:</strong> Dreaming does NOT retrain the model. It does not
+                change weights. It is memory curation, not learning in the deep-learning sense. The agent gets smarter
+                because it starts the next session with a cleaner, better-organised memory — not because the underlying
+                model improved.
+            </p>
+        </div>
+
+        <!-- Section 03 -->
+        <div class="article-section" id="harvey-ai">
+            <div class="section-tag">03 / The Proof</div>
+            <h3>Harvey AI — what the 6x really means.</h3>
+
+            <p>
+                Harvey is the legal AI startup used by some of the biggest law firms in the world. They draft contracts,
+                review filings, and run legal research using Claude agents.
+            </p>
+            <p>
+                Their agents kept failing the same tasks. Not catastrophically — in small, ordinary, repeated ways.
+                Forgetting a citation format. Re-asking the same procedural question. Re-discovering filetype workarounds
+                they had figured out a week earlier. Nothing a human would call a bug. Just friction.
+            </p>
+
+            <div class="stat-highlight">
+                <div class="stat-number">6×</div>
+                <div class="stat-label">Jump in task completion rate after turning Dreaming on.<br>No new prompts. No new engineers. No model upgrade.</div>
+            </div>
+
+            <p>
+                <strong style="color:#00ff00;">Why this number is bigger than it looks.</strong> 6x in task completion
+                is not a quality-of-life improvement — it is a category change. Tasks that used to fail every week are
+                now closing every day. The same agent. The same prompts. The same model. The only difference is that the
+                agent now remembers what it learned the previous night.
+            </p>
+            <p>
+                Honest read: this is Anthropic's own published number from a partner customer in a narrow, high-stakes
+                domain (legal drafting). Broader benchmarks across more industries are still rolling in. The result is real.
+                Whether 6x holds for every agent in every vertical is still being tested.
+            </p>
+
+            <h3 style="margin-top:28px;">Other early data points</h3>
+            <ul style="color:#ccffcc; padding-left:20px; line-height:2;">
+                <li>Wisedocs (medical document review) cut document review time by <strong style="color:#00ff00;">50%</strong> with Dreaming + Outcomes combined.</li>
+                <li>Anthropic's own benchmarks reported <strong style="color:#00ff00;">+8.4%</strong> on docx generation tasks.</li>
+                <li>Anthropic's own benchmarks reported <strong style="color:#00ff00;">+10.1%</strong> on pptx generation tasks.</li>
+            </ul>
+        </div>
+
+        <!-- Section 04 -->
+        <div class="article-section" id="the-shift">
+            <div class="section-tag">04 / The Shift</div>
+            <h3>The static agent era is over.</h3>
+
+            <p>
+                For the last 18 months, every AI agency, every n8n freelancer, every Claude agent builder has been
+                selling the same thing: a static workflow. You build it once, configure prompts, ship to client, charge
+                a setup fee plus retainer for changes.
+            </p>
+            <p>
+                The problem: clients had to keep asking you to improve the agent. Every new edge case meant a new ticket.
+                Every preference shift meant a new prompt. The agent never got better on its own. The agency became a
+                maintenance bottleneck.
+            </p>
+            <p>
+                <strong style="color:#00ff00;">Dreaming kills the static agent.</strong> Now your agent compounds.
+                Every session it runs adds to the pile of evidence it learns from overnight. The 30th week of operation
+                is dramatically more useful than the first.
+            </p>
+
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th>Before Dreaming</th>
+                        <th>After Dreaming</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Agent quality flat after deployment</td>
+                        <td>Agent quality compounds every week</td>
+                    </tr>
+                    <tr>
+                        <td>Engineer needed for every improvement</td>
+                        <td>Improvements happen overnight, automatically</td>
+                    </tr>
+                    <tr>
+                        <td>Client renews because workflow is locked in</td>
+                        <td>Client renews because agent gets better with use</td>
+                    </tr>
+                    <tr>
+                        <td>Pricing model: one-time setup + flat retainer</td>
+                        <td>Pricing model: setup + outcome-based fee that scales</td>
+                    </tr>
+                    <tr>
+                        <td>Competitive moat: who can build fastest</td>
+                        <td>Competitive moat: whose agents have been running longest</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                The moat is shifting from build speed to runtime. The agent you deployed for a client six months ago,
+                with six months of nightly dream cycles, is now defensible in a way no fresh competitor can match in a week.
+            </p>
+        </div>
+
+        <!-- Section 05 -->
+        <div class="article-section" id="opportunities">
+            <div class="section-tag">05 / The Opportunity</div>
+            <h3>5 business plays most people will miss.</h3>
+
+            <ul class="opportunities-list">
+                <li>
+                    <span class="opp-num">01</span>
+                    <div class="opp-content">
+                        <h4>The Dreaming Audit Service</h4>
+                        <p>
+                            Every existing AI agency client has static agents. Offer a one-time audit: review their
+                            workflows, identify which ones are repetitive enough to benefit from Dreaming, set up the
+                            dream schedule, deliver a before/after performance report after 30 days. Charge a flat fee per agent.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="opp-num">02</span>
+                    <div class="opp-content">
+                        <h4>Vertical-Specific Compounding Agents</h4>
+                        <p>
+                            Pick one industry you know cold (real estate, healthcare ops, ecommerce CX). Build a vertical
+                            agent that runs Dreaming nightly on customer data patterns specific to that vertical. After 6
+                            months it will be unbeatable by any horizontal competitor.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="opp-num">03</span>
+                    <div class="opp-content">
+                        <h4>Outcome-Based Pricing Models</h4>
+                        <p>
+                            Stop charging flat retainers. Charge based on task completion lift over a 90-day rolling
+                            window. Dreaming makes this safe because the agent measurably improves. Bonus: it aligns
+                            your incentive with the client's.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="opp-num">04</span>
+                    <div class="opp-content">
+                        <h4>The Memory Curator Role</h4>
+                        <p>
+                            A new job category is opening: humans who review what the agent dreams about before it goes
+                            live. Like an editor for AI memory. Agencies that staff this role early will sell 'human
+                            reviewed dream cycles' as a premium offering to regulated industries (legal, finance, healthcare).
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span class="opp-num">05</span>
+                    <div class="opp-content">
+                        <h4>Dream-Powered Content IPs</h4>
+                        <p>
+                            Run an agent on your own content workflows for 90 days with Dreaming on. The agent will
+                            surface patterns you cannot see — which hooks performed, which topics compound, which formats
+                            your audience actually saves. Package this insight loop as a product.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 06 -->
+        <div class="article-section" id="risks">
+            <div class="section-tag">06 / The Fine Print</div>
+            <h3>The risks nobody on LinkedIn is mentioning.</h3>
+
+            <ul class="risks-list">
+                <li>
+                    <strong>Bias amplification.</strong> If past sessions are skewed, the dream amplifies the skew.
+                    Example: a user corrects the agent 3 times in a row to use formal language for a legal doc. Dreaming
+                    may conclude "user always prefers formal" and apply it to a casual chat the next day.
+                </li>
+                <li>
+                    <strong>Hallucinated memory.</strong> Pattern extraction is itself an LLM task. It can imagine
+                    patterns that were not there. This is why Anthropic keeps the original memory untouched and outputs
+                    a separate file for review.
+                </li>
+                <li>
+                    <strong>Narrow validation.</strong> The 6x figure comes from one customer in one domain (legal
+                    drafting). It is a real number but it has not been replicated across every vertical yet. Treat
+                    domain-specific lift as the realistic expectation.
+                </li>
+                <li>
+                    <strong>Cost.</strong> Dreaming runs at standard API token rates. Long session histories mean
+                    expensive dreams. Budget this in. Some teams will dream weekly instead of nightly to control cost.
+                </li>
+                <li>
+                    <strong>Lock-in.</strong> Agents that have dreamed for 6 months become hard to replace. That is
+                    great for you if you built them. It is a trap for clients who want to switch providers later.
+                    Be transparent about this.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Takeaway -->
+        <div class="takeaway-box">
+            <h3>The Takeaway</h3>
+            <p>
+                Dreaming is not magic. It is memory curation done well, on a schedule, with measurable lift. But that
+                is enough to break the static agent business model that most of the AI agency economy is built on.
+                The builders who set up dream cycles for their agents in 2026 will look, by 2027, like the people who
+                invested in cloud infrastructure in 2012 — early, quietly, and correctly.
+            </p>
+        </div>
+
+    </section>
+
+</body>
+</html>
