@@ -16,6 +16,7 @@
 |---|---|
 | Pratik Dhami | MIT231942 |
 | Joy Nyaundi | MIT223649 |
+| Mishel kenath | MIT231379 |
 
 ---
 
@@ -160,8 +161,14 @@ SearchSortUtil.binarySearchUnit(sorted, code);  // Strategy D
 ```
 
 ---
+### 1.4 OOD Principles and Design Patterns
+
+The College Management System applies low coupling and high cohesion through a structured MVC architecture. Controllers interact with models and utilities without depending on Swing components, improving maintainability and scalability. SOLID principles are demonstrated through dedicated responsibilities, interface-based design, extensibility, and abstraction. The system also incorporates Factory Method, Facade, and Strategy design patterns to simplify object creation, encapsulate subsystem complexity, and provide interchangeable search and sorting algorithms.
+
 
 ## Part A — Q2: UML Class Diagram [6 Marks]
+
+The UML design models the relationships between Students, Instructors, Units, Unit Offerings, and Enrolments. The diagram reflects MVC architecture by separating Models, Views, Controllers, and Utility classes. The Person interface supports inheritance and polymorphism, while Enrollment resolves the many-to-many relationship between students and offerings.
 
 The UML Class Diagram is provided in the file `UML_DIAGRAM.puml` in the project repository.
 
@@ -185,6 +192,9 @@ The MVC architecture is clearly visible:
 ---
 
 ## Part A — Q3: Test Plan with JUnit [3 Marks]
+
+### JUnit Testing
+JUnit 5 was used to validate controller functionality. Tests verify duplicate prevention, searching, sorting, filtering, and record retrieval. Three controller test suites were executed: UnitControllerTest, StudentControllerTest, and EnrollmentControllerTest. All 18 tests completed successfully with zero failures and zero errors.
 
 ### Test Objectives
 
@@ -253,6 +263,8 @@ Verify that the three core controller classes correctly:
 
 ## Part B — Implementation Summary [35 Marks]
 
+The application follows MVC architecture. Data is stored in ArrayLists during execution and persisted using CSV files through FileManager. SearchSortUtil implements Linear Search, Binary Search, Bubble Sort, and Insertion Sort. GitHub was used for version control, collaboration, and maintaining project history throughout development.
+
 ### System Architecture
 
 The application follows strict **MVC (Model-View-Controller)** architecture:
@@ -317,6 +329,7 @@ The project uses **Git** with the repository hosted on **GitHub** (`Pratik00100/
 |---|---|---|
 | Pratik Dhami | MIT231942 | System architecture and MVC design, Controller package implementation, File I/O and data persistence, Search and sort algorithm implementation (SearchSortUtil), Algorithms Demo panel, Git version control and repository management |
 | Joy Nyaundi | MIT223649 | Model package design and implementation, View package (all Swing GUI panels), JUnit test plan design and implementation, UML class diagram, Part A written report (OOD principles, design patterns) |
+| Mishel Kenath | MIT231379 | Prepared and reviewed the final assessment report content, improved the GitHub Markdown formatting, added screenshot-based evidence for the implemented CMS features, tested the main user interface screens including students, instructors, offerings, enrolment, reports, and algorithm demo panels, checked that the documentation matched the completed system, and contributed to final presentation preparation and submission quality control. |
 
 *Both group members contributed equally to the overall design, testing, and presentation preparation.*
 
