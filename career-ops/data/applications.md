@@ -2,6 +2,7 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 8 | 2026-06-17 | (unnamed - printing/cutting equipment supplier) | Field Service Technician | - | SKIP | ❌ | - | Cheltenham VIC, requires drivers licence + passport for AU/Pacific Islands travel - hard block, also wrong archetype (printer/cutter hardware, not IT support) |
 | 7 | 2026-06-17 | FinXL | IT Business Systems Analyst | 1.5/5 | SKIP | ❌ | - | Melbourne CBD, role is a Business Analyst function (Jira/Epic, requirement gathering, stakeholder mgmt) - no overlap with support background, wrong archetype not a stretch |
 | 6 | 2026-06-17 | VISITS | Service Desk / Onsite Engineer (MSP) | - | SKIP | ❌ | - | South Melbourne MSP, strong technical match (M365/Intune/EntraID) but requires Australian Citizen/PR + drivers licence - hard block, Partner Visa holder |
 | 5 | 2026-06-17 | Impelsoft Pty Ltd | L1 Desktop Support Engineer - Band 1 | - | SKIP | ❌ | - | Australian Citizenship explicitly required (stated 3x) - hard block, Partner Visa holder |
