@@ -1,0 +1,161 @@
+# Portal Scanner Configuration -- Pratik Dhami
+# Customized from templates/portals.example.yml for entry-level IT
+# support / cybersecurity roles in Melbourne, Australia.
+
+# -- Location filter --
+# Pratik is Melbourne-metro only (on-site/hybrid), not chasing remote/interstate.
+location_filter:
+  always_allow:
+    - "Melbourne"
+    - "VIC"
+    - "Victoria"
+  allow:
+    - "Melbourne"
+    - "VIC"
+    - "Victoria"
+    - "Hybrid"
+    - "On-site"
+  block:
+    - "Sydney"
+    - "Brisbane"
+    - "Perth"
+    - "Adelaide"
+    - "Canberra"
+    - "Darwin"
+    - "Hobart"
+    - "New Zealand"
+    - "United States"
+    - "United Kingdom"
+    - "India"
+    - "Philippines"
+
+# -- Salary filter --
+salary_filter:
+  min: 50000
+  max: 0
+  currency: "AUD"
+
+# -- Title filter --
+title_filter:
+  positive:
+    - "IT Support"
+    - "Service Desk"
+    - "Help Desk"
+    - "Helpdesk"
+    - "Technical Support"
+    - "Desktop Support"
+    - "IT Officer"
+    - "IT Technician"
+    - "Support Analyst"
+    - "Support Engineer (Level 1)"
+    - "L1 Support"
+    - "First Line Support"
+    - "Field Service"
+    - "Systems Administrator"
+    - "Network Administrator"
+    - "Junior Systems Engineer"
+    - "SOC Analyst"
+    - "Cybersecurity Analyst"
+    - "Cyber Security Analyst"
+    - "Security Analyst (Junior)"
+    - "IT Graduate"
+    - "Graduate IT"
+    - "Trainee IT"
+    - "MSP"
+  negative:
+    - "Senior"
+    - "Lead"
+    - "Principal"
+    - "Manager"
+    - "Architect"
+    - "Head of"
+    - "Director"
+    - "Software Engineer"
+    - "Software Developer"
+    - "Full Stack"
+    - "Backend Developer"
+    - "Frontend Developer"
+    - ".NET Developer"
+    - "Java Developer"
+    - "Python Developer"
+    - "DevOps Engineer"
+    - "Driver"
+    - "Sales"
+    - "Citizenship required"
+    - "Security clearance"
+    - "Baseline Clearance"
+    - "NV1"
+    - "NV2"
+  seniority_boost: []
+
+# -- Search queries --
+# WebSearch-based (no Playwright/WebFetch available in this environment).
+search_queries:
+  - name: SEEK -- IT Support Melbourne
+    query: 'site:seek.com.au "IT Support" OR "Service Desk" OR "Help Desk" Melbourne'
+    enabled: true
+
+  - name: SEEK -- Junior Cybersecurity Melbourne
+    query: 'site:seek.com.au "Cyber Security" OR "SOC Analyst" Junior OR Graduate Melbourne'
+    enabled: true
+
+  - name: Indeed -- IT Support Melbourne
+    query: 'site:au.indeed.com "IT Support" OR "Service Desk" OR "Help Desk" Melbourne'
+    enabled: true
+
+  - name: LinkedIn -- IT Support Melbourne
+    query: 'site:linkedin.com/jobs "IT Support" OR "Service Desk Analyst" OR "Help Desk" Melbourne'
+    enabled: true
+
+  - name: LinkedIn -- Junior SOC/Cybersecurity Melbourne
+    query: 'site:linkedin.com/jobs "SOC Analyst" OR "Cyber Security Analyst" Junior OR Graduate Melbourne'
+    enabled: true
+
+# -- Tracked companies --
+# Melbourne-area MSPs / IT support employers. Most don't expose a public
+# ATS API, so scan_method is websearch (uses WebSearch, not Playwright/WebFetch
+# which both have access issues in this environment).
+tracked_companies:
+  - name: Datacom
+    careers_url: https://careers.datacom.com
+    scan_method: websearch
+    scan_query: 'site:careers.datacom.com "Service Desk" OR "IT Support" Melbourne'
+    notes: "MSP. Screen every JD for citizenship/clearance requirements -- per-contract, not per-company."
+    enabled: true
+
+  - name: DXC Technology
+    careers_url: https://jobs.dxc.com
+    scan_method: websearch
+    scan_query: 'site:jobs.dxc.com "Service Desk" OR "IT Support" Melbourne'
+    notes: "Large MSP/outsourcer. Graduate program confirmed blocked (citizenship/PR required) -- check individual roles separately."
+    enabled: true
+
+  - name: Unisys
+    careers_url: https://careers.unisys.com
+    scan_method: websearch
+    scan_query: 'site:careers.unisys.com "Service Desk" OR "IT Support" Melbourne'
+    enabled: true
+
+  - name: NTT DATA / NTT Ltd
+    careers_url: https://careers.global.ntt
+    scan_method: websearch
+    scan_query: '"NTT" careers "Service Desk" OR "IT Support" Melbourne'
+    enabled: true
+
+  - name: Empired/Fujifilm Business Innovation
+    careers_url: https://www.fujifilm.com/fb/en/careers
+    scan_method: websearch
+    scan_query: '"Fujifilm Business Innovation" OR "Empired" careers "IT Support" OR "Service Desk" Melbourne'
+    enabled: true
+
+  - name: Konica Minolta
+    careers_url: https://www.konicaminolta.com.au/about-us/careers
+    scan_method: websearch
+    scan_query: '"Konica Minolta" careers "IT Support" OR "Service Desk" Melbourne'
+    enabled: true
+
+  - name: CSG (Melbourne MSP)
+    careers_url: https://www.csg.com.au/careers
+    scan_method: websearch
+    scan_query: '"CSG" Melbourne careers "IT Support" OR "Service Desk"'
+    enabled: true
