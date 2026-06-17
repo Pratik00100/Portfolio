@@ -1,0 +1,52 @@
+# Career-Ops Profile Configuration
+# Single source of truth for Pratik's personal data across all modes.
+
+candidate:
+  full_name: "Pratik Dhami"
+  email: "justpratik1@gmail.com"
+  phone: "0431 981 858"
+  location: "Melbourne, VIC 3000"
+  linkedin: "linkedin.com/in/patrick-d-0a41a12ab"
+
+target_roles:
+  primary:
+    - "IT Support Officer"
+    - "Service Desk Analyst"
+    - "Help Desk Technician"
+  archetypes:
+    - name: "IT Support / Service Desk (Level 1)"
+      level: "Entry-level"
+      fit: "primary"
+    - name: "Technical Support Associate (MSP)"
+      level: "Entry-level"
+      fit: "primary"
+    - name: "Junior Cybersecurity / SOC Analyst"
+      level: "Entry-level / Graduate"
+      fit: "secondary"
+    - name: "Junior Systems/Network Administrator"
+      level: "Entry-level"
+      fit: "adjacent"
+
+narrative:
+  headline: "IT support professional transitioning into cybersecurity"
+  exit_story: "Two years of hands-on first-line technical support at Ozb Group (RMA), now completing a Bachelor of Cybersecurity at MIT and ready for full-time work."
+  superpowers:
+    - "First-point-of-contact case ownership end-to-end (not just resolve-and-close)"
+    - "Explaining technical issues clearly to non-technical/anxious users"
+    - "Training and onboarding new support staff"
+    - "Cybersecurity fundamentals (networking, incident response, risk management) layered on top of real support experience"
+
+compensation:
+  target_range: "AUD 55,000-70,000"
+  currency: "AUD"
+  minimum: "AUD 52,000"
+  location_flexibility: "On-site/hybrid Melbourne metro, comfortable with shift work and rotating rosters"
+
+location:
+  country: "Australia"
+  city: "Melbourne"
+  timezone: "AEST"
+  visa_status: "Partner Visa (subclass 820), full working rights, no employer sponsorship needed"
+
+availability:
+  status: "Immediate -- final exams completed June 2026, degree conferral expected July 2026"
