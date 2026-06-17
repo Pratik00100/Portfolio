@@ -13,13 +13,29 @@
 import { chromium } from 'playwright';
 import { resolve, dirname, relative, isAbsolute } from 'path';
 import { readFile } from 'fs/promises';
-import { mkdirSync } from 'fs';
+import { mkdirSync, existsSync, readdirSync } from 'fs';
 import { fileURLToPath, pathToFileURL } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Ensure output directory exists (fresh setup)
 mkdirSync(resolve(__dirname, 'output'), { recursive: true });
+
+/**
+ * Find a usable Chromium binary when the exact build Playwright expects
+ * isn't installed (e.g. sandboxed environments with no network access to
+ * download browsers, but an older cached build still on disk).
+ */
+function findFallbackChromiumExecutable() {
+  const browsersDir = '/opt/pw-browsers';
+  if (!existsSync(browsersDir)) return null;
+  for (const entry of readdirSync(browsersDir)) {
+    if (!entry.startsWith('chromium-') && entry !== 'chromium') continue;
+    const candidate = resolve(browsersDir, entry, 'chrome-linux', 'chrome');
+    if (existsSync(candidate)) return candidate;
+  }
+  return null;
+}
 
 /**
  * Normalize text for ATS compatibility by converting problematic Unicode.
@@ -287,7 +303,15 @@ export async function renderHtmlToPdf(html, outputPath, opts = {}) {
 
   html = await inlineLocalFonts(html);
 
-  const browser = await chromium.launch({ headless: true });
+  let browser;
+  try {
+    browser = await chromium.launch({ headless: true });
+  } catch (err) {
+    const fallback = findFallbackChromiumExecutable();
+    if (!fallback) throw err;
+    console.warn(`⚠️  Expected Chromium build missing, falling back to ${fallback}`);
+    browser = await chromium.launch({ headless: true, executablePath: fallback });
+  }
   try {
     const page = await browser.newPage();
 
