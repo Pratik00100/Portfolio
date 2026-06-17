@@ -9,7 +9,7 @@
 
 ## Professional Summary
 
-Motivated and adaptable IT student with hands-on technical support experience, seeking an entry-level IT or cybersecurity role. Proven ability to troubleshoot technical issues, train staff, and deliver strong customer service in fast-paced environments. Currently completing a Bachelor of Cybersecurity while building practical skills in IT support, compliance, and problem-solving.
+Motivated and adaptable IT support professional with two years of hands-on technical support experience, seeking an entry-level IT or cybersecurity role. Proven ability to troubleshoot technical issues, train staff, and deliver strong customer service in fast-paced environments. Has completed all coursework and final exams for a Bachelor of Cybersecurity (degree conferral expected July 2026) and is now available for full-time work immediately. Holds full working rights in Australia on a Partner Visa — no employer sponsorship required.
 
 ---
 
@@ -52,7 +52,7 @@ Motivated and adaptable IT student with hands-on technical support experience, s
 
 **Bachelor of Cybersecurity**  
 Melbourne Institute of Technology — Melbourne, VIC  
-*June 2023 – July 2026 (expected)*
+*June 2023 – July 2026 (final exams completed June 2026; degree conferral expected July 2026)*
 
 ---
 
