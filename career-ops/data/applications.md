@@ -2,6 +2,7 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 9 | 2026-06-17 | Australian United Retailers (AUR) | Head of IT / IT Director | - | SKIP | ❌ | - | Melbourne CBD, executive role reporting to CEO, requires 10+ yrs senior IT leadership - massive seniority mismatch, not a deal-breaker issue |
 | 8 | 2026-06-17 | (unnamed - printing/cutting equipment supplier) | Field Service Technician | - | SKIP | ❌ | - | Cheltenham VIC, requires drivers licence + passport for AU/Pacific Islands travel - hard block, also wrong archetype (printer/cutter hardware, not IT support) |
 | 7 | 2026-06-17 | FinXL | IT Business Systems Analyst | 1.5/5 | SKIP | ❌ | - | Melbourne CBD, role is a Business Analyst function (Jira/Epic, requirement gathering, stakeholder mgmt) - no overlap with support background, wrong archetype not a stretch |
 | 6 | 2026-06-17 | VISITS | Service Desk / Onsite Engineer (MSP) | - | SKIP | ❌ | - | South Melbourne MSP, strong technical match (M365/Intune/EntraID) but requires Australian Citizen/PR + drivers licence - hard block, Partner Visa holder |
