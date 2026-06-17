@@ -54,9 +54,10 @@ Pratik is an IT support professional with two years of real first-line support e
 ## HARD DEAL-BREAKERS -- screen these out before building any docs
 
 1. **Citizenship / Permanent Residency required.** Pratik holds a Partner Visa (subclass 820 — temporary, en route to 801 permanent). Any role or graduate program that explicitly requires Australian/NZ citizenship or PR (common at banks, government, defense-adjacent, and large corporate graduate programs due to security clearance/AUSTRAC policy) is a **hard block**. Confirmed examples already excluded: DXC 2027 Graduate Program, CommBank Technology Associate Program (explicitly excludes "820 visa holders" by name). Treat large bank/government graduate schemes as likely blocked by default — verify the visa clause before doing any work.
-2. **Driver's licence required** (unless role is genuinely office-based and licence is incidental) — Pratik does not drive.
-3. **Mandatory enterprise software experience** he doesn't have (e.g. specific ERP/ITSM platforms required, not just preferred) where the JD treats it as non-negotiable.
-4. **Programming-heavy roles** (C#/Java/Python developer roles) — wrong track, he's support/cybersecurity, not software engineering.
+2. **Security clearance required (Baseline/NV1/NV2).** Even outsourced/MSP roles can require Australian Citizenship + Baseline Clearance when the underlying client is government/defense. Confirmed example: Datacom Service Desk Agent (Melbourne, listed June 2026) — "Due to client clearance requirements Australian Citizenship... and willingness to obtain a Baseline Clearance is essential." This is per-contract, not per-company — don't blanket-skip an MSP, but always scan each JD for "clearance", "citizenship", "police check" before building docs.
+3. **Driver's licence required** (unless role is genuinely office-based and licence is incidental) — Pratik does not drive.
+4. **Mandatory enterprise software experience** he doesn't have (e.g. specific ERP/ITSM platforms required, not just preferred) where the JD treats it as non-negotiable.
+5. **Programming-heavy roles** (C#/Java/Python developer roles) — wrong track, he's support/cybersecurity, not software engineering.
 
 ## Already Applied (avoid duplicate work, check before evaluating)
 
