@@ -4,6 +4,19 @@
      THIS FILE IS YOURS. It will NEVER be auto-updated.
      ============================================================ -->
 
+## Current Priority (2026-06-25 — overrides narrow archetype fit below)
+
+Pratik needs income now. Widen evaluation scope: do NOT auto-skip a role just for being outside the IT/cybersecurity archetypes below. Any field, any company is in scope — the real filters are:
+
+1. **Stable** — ongoing role, not casual/gig/contract-to-nothing.
+2. **Decent, livable pay** — at or above his AUD 55,000-70,000 target where possible; don't reject a good-paying role just because it's a different track.
+3. **Low physical demand** — desk/office/customer-service type work, not labor-intensive (warehouse, delivery, trades, kitchen/cleaning-type work). He's done physical/service jobs before (see Experience) and wants to move away from that, not back into it.
+4. **Not high-difficulty/high-stress to learn or perform** — avoid roles demanding specialized skills he'd struggle to ramp into quickly.
+
+Score these honestly per the existing scoring system, but when a role clears the Hard Deal-Breakers below and fits 1-4 above, recommend applying even if the archetype match is weak or the score is below the usual 4.0 threshold — surface the trade-off, don't auto-discard it.
+
+**Future direction:** Pratik is also interested in pivoting toward AI — he's considering AI-related certificates and would like AI-adjacent roles surfaced when found, even speculatively. This is a parallel longer-term track, not a replacement for the immediate need above.
+
 ## Your Target Roles
 
 | Archetype | Thematic axes | What they buy |
