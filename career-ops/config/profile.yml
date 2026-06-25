@@ -1,0 +1,47 @@
+# Career-Ops Profile Configuration
+# Source of truth for personal data across all modes. Generated from cv.md.
+
+candidate:
+  full_name: "Pratik Dhami"
+  email: "justpratik1@gmail.com"
+  phone: "0431 981 858"
+  location: "Melbourne, VIC, Australia"
+  linkedin: "linkedin.com/in/patrick-d-0a41a12ab"
+  portfolio_url: ""
+  github: ""
+
+target_roles:
+  primary:
+    - "IT Support Officer"
+    - "Service Desk Analyst"
+    - "Helpdesk Support Analyst"
+  archetypes:
+    - name: "IT Support / Service Desk"
+      level: "Entry-level / Graduate"
+      fit: "primary"
+    - name: "Cybersecurity Analyst"
+      level: "Entry-level / Graduate"
+      fit: "secondary"
+    - name: "Systems/Network Support"
+      level: "Junior"
+      fit: "adjacent"
+
+narrative:
+  headline: "Cybersecurity student with hands-on technical support experience"
+  exit_story: "Built customer-facing troubleshooting and training experience in technical support roles. Now completing a Bachelor of Cybersecurity and looking to apply that foundation in a structured IT/service desk environment."
+  superpowers:
+    - "Hands-on technical support and troubleshooting"
+    - "Customer service under pressure"
+    - "Training new staff on technical processes"
+
+compensation:
+  target_range: "AUD 60K-75K"
+  currency: "AUD"
+  minimum: "AUD 55K"
+  location_flexibility: "On-site/hybrid in Melbourne preferred, open to relocation within metro area"
+
+location:
+  country: "Australia"
+  city: "Melbourne"
+  timezone: "AEST"
+  visa_status: "No sponsorship needed"
