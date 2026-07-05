@@ -1,10 +1,17 @@
 # Passang Tamang
 
-0488304942 | 350 La Trobe Street, Melbourne, VIC 3000 | Australian Citizen
+0488304942 | Amisatamang28@gmail.com | 402/9 Degraves Street, Melbourne, VIC 3000 | Australian Citizen
 
 ## Professional Summary
 
-Reliable, personable professional with experience across hospitality, retail, facilities cleaning, and electrical support. Has independently run full venue operations, communicates well with customers and teams, and picks up new responsibilities quickly. Seeking a customer-facing or supervisory role that makes better use of leadership and people skills than repetitive cleaning work.
+Reliable, personable professional with hands-on experience across hospitality, retail, and facilities cleaning in Melbourne. Has independently run full venue operations end-to-end, holds current RSA, food safety, first aid, and police check certifications, and communicates confidently with customers and teams. Seeking a customer-facing or supervisory role that puts leadership and people skills to better use.
+
+## Certifications
+
+- Responsible Service of Alcohol (RSA)
+- Food Safety / Handling Certificate
+- First Aid Certificate
+- National Police Check (current)
 
 ## Work History
 
@@ -37,23 +44,11 @@ Reliable, personable professional with experience across hospitality, retail, fa
 - Stocked shelves and organised inventory
 - Assisted customers and helped with deliveries
 
+## Skills
+
+Customer Service · Communication · Venue / Operations Management · Cash Handling · Team Leadership · Multitasking · Cleaning & Presentation Standards · OH&S Compliance
+
 ## Education
 
 - Mount Ridley College (2020 – 2022)
 - Hume Central Secondary College (2015 – 2019)
-
-## Skills
-
-Venue/Operations Management · Customer Service · Communication · Cash Handling · Multitasking · Cleaning & Presentation Standards · Team Leadership · OH&S Compliance
-
-## Personal Qualities
-
-- Good communication skills
-- High standard of personal cleanliness
-- Attention to detail
-- Ability to learn quickly and work under pressure
-- Able to cope with the physical demands of a job
-
-## References
-
-Available on request.
