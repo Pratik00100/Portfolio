@@ -17,13 +17,13 @@ Reliable, personable professional with hands-on experience across hospitality, r
 
 **Tradeflex — Office Cleaner** (Late 2025 – Present)
 - Maintain cleanliness and presentation standards across commercial office sites
-- Manage own workload and schedule to meet strict deadlines with no supervision
+- Lead own workload and schedule across multiple sites, planning and prioritising tasks to meet strict deadlines with no supervision
 - Follow OH&S protocols for commercial cleaning
 
 **Shisha Lounge — Footscray, VIC** (2024 – Mid 2025)
-- Independently managed full daily operations of the venue: opening/closing, stock, and customer service
+- Led full day-to-day operations of the venue single-handedly: opening/closing, stock, and customer service
+- Took full ownership of standards, cash handling, and problem-solving with no manager or team on site
 - Prepared shisha and beverages to a consistent standard
-- Handled cash handling, customer relations, and day-to-day problem-solving without supervision
 - Built a strong repeat customer base through communication and service
 
 **Caravan Electric Solution — Somerton/Campbellfield, VIC** (January 2023 – September 2024)
