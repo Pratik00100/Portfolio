@@ -114,6 +114,11 @@ async function generatePDF() {
     /url\(['"]?\.\/fonts\//g,
     `url('file://${fontsDir}/`
   );
+  // Also handle ../fonts/ (used by templates in subdirectories)
+  html = html.replace(
+    /url\(['"]?\.\.\/fonts\//g,
+    `url('file://${fontsDir}/`
+  );
   // Close any unclosed quotes from the replacement
   html = html.replace(
     /file:\/\/([^'")]+)\.woff2['"]\)/g,
