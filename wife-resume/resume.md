@@ -4,7 +4,7 @@
 
 ## Professional Summary
 
-Reliable, personable professional with hands-on experience across hospitality, retail, and facilities cleaning in Melbourne. Has independently run full venue operations end-to-end, holds current RSA, food safety, first aid, and police check certifications, and communicates confidently with customers and teams. Seeking a customer-facing or supervisory role that puts leadership and people skills to better use.
+Reliable, personable professional with hands-on experience across hospitality, retail, facilities cleaning, and customer service in Melbourne. Has independently run full venue operations end-to-end — including cash handling, stock, and customer relations — holds current RSA, food safety, first aid, and police check certifications, and communicates confidently with customers, teams, and the public. Comfortable working unsupervised, learning new systems quickly, and taking full ownership of a role. Seeking a customer-facing, cleaning, or administrative role that puts this reliability and leadership to good use.
 
 ## Certifications
 
@@ -46,7 +46,7 @@ Reliable, personable professional with hands-on experience across hospitality, r
 
 ## Skills
 
-Customer Service · Communication · Venue / Operations Management · Cash Handling · Team Leadership · Multitasking · Cleaning & Presentation Standards · OH&S Compliance
+Customer Service · Communication · Venue / Operations Management · Cash Handling & Reconciliation · Team Leadership · Organisation & Time Management · Cleaning & Presentation Standards · OH&S Compliance · Computer Literate (Word, Excel)
 
 ## Education
 
