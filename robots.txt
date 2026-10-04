@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /Portfolio/
+
+Sitemap: https://pratik00100.github.io/Portfolio/sitemap.xml

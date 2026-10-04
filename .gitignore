@@ -1,0 +1,7 @@
+.private/
+__pycache__/
+.DS_Store
+.playwright-mcp/
+qa-output/
+_site/
+*.log
