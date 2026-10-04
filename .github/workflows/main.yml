@@ -1,25 +1,50 @@
-name: Deploy to GitHub Pages
+name: Validate and deploy portfolio
 
 on:
   push:
-    branches:
-      - main  # Change this if your branch has a different name
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  deploy:
+  validate:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v6
+      - name: Check site
+        run: python3 check_site.py
+      - name: Stage public website only
+        run: |
+          mkdir _site
+          cp index.html styles.css about.html skills.html projects.html experience.html education.html contact.html robots.txt sitemap.xml _site/
+          cp -r assets _site/
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
+      - uses: actions/upload-pages-artifact@v4
+        if: github.event_name != 'pull_request'
         with:
-          node-version: '16'  # Update to Node.js 16 (you can also use '20')
+          path: _site
 
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+        id: deployment
+        uses: actions/deploy-pages@v4
+
